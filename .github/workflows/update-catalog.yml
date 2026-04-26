@@ -1,0 +1,36 @@
+name: Update Aether catalog
+
+on:
+  schedule:
+    # Toutes les 6 heures
+    - cron: '0 */6 * * *'
+  workflow_dispatch:  # Permet de lancer manuellement depuis l'onglet Actions
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Run catalog updater
+        run: python scripts/update_catalog.py
+      
+      - name: Commit & push
+        run: |
+          git config user.name "Aether Bot"
+          git config user.email "aether-bot@users.noreply.github.com"
+          git add catalog.json
+          if git diff --staged --quiet; then
+            echo "Pas de changement"
+          else
+            git commit -m "🎵 Update catalog $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          fi
