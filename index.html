@@ -213,6 +213,7 @@
         </div>
         <div class="text-[11px] text-zinc-500 mt-2 px-1">
             <span id="source-hint">Lecture audio avec son et arrière-plan possible.</span>
+            <span id="catalog-status" class="hidden ml-2 text-amber-400/80"></span>
         </div>
     </section>
     
@@ -220,6 +221,9 @@
     <section class="px-4 sm:px-8 max-w-[1200px] mx-auto mb-5">
         <div class="flex gap-x-2 overflow-x-auto pb-1 -mx-1 px-1" style="scrollbar-width: none;">
             <button onclick="filterGenre('all', this)" class="pill active flex-shrink-0 px-4 py-2 rounded-full text-sm font-medium bg-white/10 whitespace-nowrap">Tout</button>
+            <button onclick="filterGenre('fresh', this)" class="pill flex-shrink-0 px-4 py-2 rounded-full text-sm font-medium bg-white/10 whitespace-nowrap">
+                <i class="fa-solid fa-bolt text-amber-400 mr-1"></i>Récents
+            </button>
             <button onclick="filterGenre('hits', this)" class="pill flex-shrink-0 px-4 py-2 rounded-full text-sm font-medium bg-white/10 whitespace-nowrap">Hits</button>
             <button onclick="filterGenre('pop', this)" class="pill flex-shrink-0 px-4 py-2 rounded-full text-sm font-medium bg-white/10 whitespace-nowrap">Pop</button>
             <button onclick="filterGenre('rap', this)" class="pill flex-shrink-0 px-4 py-2 rounded-full text-sm font-medium bg-white/10 whitespace-nowrap">Rap FR</button>
@@ -426,6 +430,68 @@
             { id: '1w7OgIMMRc4', title: 'Sweet Child O\' Mine', artist: 'Guns N\' Roses', genre: ['classics'] },
             { id: '1k8craCGpgs', title: 'Don\'t Stop Believin\'', artist: 'Journey', genre: ['classics'] },
         ];
+        
+        // ============================================================
+        // AUTO-UPDATED CATALOG (fetched from catalog.json in this repo)
+        // ============================================================
+        // The GitHub Action in .github/workflows/update-catalog.yml runs
+        // every 6h, scrapes RSS feeds from channels.txt, and commits a
+        // fresh catalog.json. We merge those entries into `tracks` here
+        // so they appear alongside the curated list. If the file isn't
+        // there yet (first deploy), we silently fall back to curated only.
+        async function loadAutoCatalog() {
+            try {
+                // Cache-bust so the freshest version is fetched after the Action runs
+                const url = './catalog.json?t=' + Math.floor(Date.now() / (60 * 1000));
+                const res = await fetch(url);
+                if (!res.ok) return;
+                const data = await res.json();
+                if (!data || !Array.isArray(data.videos)) return;
+                
+                // Convert the catalog format into the tracks format
+                const seen = new Set(tracks.map(t => t.id));
+                let added = 0;
+                for (const v of data.videos) {
+                    if (!v.id || seen.has(v.id)) continue;
+                    seen.add(v.id);
+                    tracks.push({
+                        id: v.id,
+                        title: v.title || '(sans titre)',
+                        artist: v.channel || '',
+                        genre: [v.category || 'general', 'fresh'],
+                        published: v.published,
+                        fresh: true,
+                    });
+                    added++;
+                }
+                
+                if (added > 0) {
+                    // Update freshness indicator if present
+                    const indicator = document.getElementById('catalog-status');
+                    if (indicator && data.updated) {
+                        const updatedDate = new Date(data.updated);
+                        const ago = formatRelativeTime(updatedDate);
+                        indicator.textContent = `${data.count} morceaux • mis à jour ${ago}`;
+                        indicator.classList.remove('hidden');
+                    }
+                    renderTracks();
+                }
+            } catch (err) {
+                // Silent fail: catalog.json doesn't exist yet, or network issue.
+                // The curated tracks always work.
+                console.log('[Aether] No auto-catalog yet:', err.message);
+            }
+        }
+        
+        function formatRelativeTime(date) {
+            const diffMin = Math.floor((Date.now() - date.getTime()) / 60000);
+            if (diffMin < 1) return 'à l\'instant';
+            if (diffMin < 60) return `il y a ${diffMin} min`;
+            const diffH = Math.floor(diffMin / 60);
+            if (diffH < 24) return `il y a ${diffH}h`;
+            const diffD = Math.floor(diffH / 24);
+            return `il y a ${diffD}j`;
+        }
         
         let currentGenre = 'all';
         // 'music' opens music.youtube.com (audio-focused, generally autoplays with sound on mobile)
@@ -923,6 +989,7 @@
         detectBrowser();
         setSource(currentSource);  // apply saved/default source and update UI
         renderTracks();
+        loadAutoCatalog();         // fetch the GitHub-Action-updated catalog (if present)
         
         // Allow Enter key in search to trigger YouTube search
         document.getElementById('search-input').addEventListener('keydown', (e) => {
