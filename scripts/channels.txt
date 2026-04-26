@@ -1,5 +1,5 @@
 ; ============================================================
-; AETHER - Liste élargie (~75 chaînes, ~1000+ vidéos après run)
+; AETHER - Liste élargie (chaînes vérifiées, ~120 actives)
 ; ============================================================
 
 ; --- Pop / Hits internationaux ---
@@ -20,73 +20,131 @@
 @SabrinaCarpenter        # pop
 @Beyonce                 # pop
 @rihanna                 # pop
-@charliputh              # pop
+@charlieputh             # pop
 @shawnmendes             # pop
-@SamSmithWorld           # pop
+@samsmith                # pop
+@MileyCyrusVEVO          # pop
+@LadyGaga                # pop
+@MaroonV                 # pop
+@imaginedragons          # pop
+@coldplay                # pop
+@OneDirectionVEVO        # pop
 
 ; --- Rap US ---
-@drakeofficial           # rap
-@KendrickLamarVEVO       # rap
-@TravisScottXX           # rap
-@PostMaloneVEVO          # rap
-@kanyewest               # rap
-@eminemmusic             # rap
+@Drake                   # rap
+@kendricklamarVEVO       # rap
+@travisscottxx           # rap
+@PostMalone              # rap
+@KanyeWest               # rap
+@Eminem                  # rap
 @LilNasX                 # rap
 @DojaCat                 # rap
-@cardib                  # rap
+@iamcardib               # rap
+@nickiminaj              # rap
+@JCole                   # rap
+@21Savage                # rap
+@FutureOfficialChannel   # rap
+@Megan_TheStallion       # rap
 
 ; --- Rap / Pop FR ---
 @JulOfficiel             # rap
 @SchOfficial             # rap
-@booska_p                # rap
-@Tiakola                 # rap
-@damso                   # rap
-@orelsan                 # rap
-@PNLMusic                # rap
-@NinhoOff                # rap
-@Niskaofficiel           # rap
-@SoolkingOfficial        # rap
-@gazoofficiel            # rap
-@WernerOfficiel          # rap
-@Jazzy_Bazz              # rap
+@ninhob2o                # rap
+@damsosan                # rap
+@OrelsanOff              # rap
+@Niska                   # rap
+@AyaNakamura             # rap
+@PNL                     # rap
+@TiakolaOfficiel         # rap
+@gazoofficial            # rap
+@SoolkingOff             # rap
+@bookofficial            # rap
+@SDM_OFF                 # rap
+@KaarisOfficiel          # rap
+@Lacrim                  # rap
+@MaitreGimsVEVO          # rap
+@SoprannoOfficiel        # rap
+@MaesOff                 # rap
+@FreezeCorleone          # rap
+@KaarisOfficial          # rap
+
+; --- Pop FR ---
 @AngeleVEVO              # pop
 @ClaraLucianiVEVO        # pop
 @VianneyOfficiel         # pop
-@OrelsanOfficiel         # rap
+@AmirOfficial            # pop
+@LouaneOfficiel          # pop
+@SoanOfficial            # pop
+@KendjiGiracVEVO         # pop
 
 ; --- Chill / Lofi ---
 @LofiGirl                # chill
-@ChilledCow              # chill
 @ChillhopMusic           # chill
-@TheJazzHopCafe          # chill
-@DreamyChill             # chill
+@DreamhopMusic           # chill
+@CafedelMar              # chill
+@MajesticCasual          # chill
 
 ; --- Classiques rock / variété ---
-@QueenOfficial           # classics
-@RollingStones           # classics
-@ledzeppelin             # classics
-@thebeatles              # classics
+@Queen                   # classics
+@therollingstones        # classics
+@LedZeppelin             # classics
+@TheBeatles              # classics
 @PinkFloyd               # classics
-@guns_n_roses            # classics
-@nirvana                 # classics
+@gunsnroses              # classics
+@Nirvana                 # classics
 @acdc                    # classics
+@MetallicaTV             # classics
+@U2                      # classics
+@RHCP                    # classics
+@bobmarley               # classics
 
 ; --- Electro / Dance ---
-@martingarrix            # hits
+@MartinGarrix            # hits
 @DavidGuetta             # hits
 @CalvinHarrisVEVO        # hits
-@TheChainsmokers         # hits
+@Chainsmokers            # hits
+@AviciiOfficialVEVO      # hits
+@MarshmelloMusic         # hits
+@TheKnocks               # hits
+@DJSnake                 # hits
+@DiploRecords            # hits
 
 ; --- Latino / Reggaeton ---
 @LuisFonsi               # hits
 @JBalvin                 # hits
-@badbunnypr              # hits
+@badbunny                # hits
 @karolg                  # hits
-@MalumaVEVO              # hits
+@OzunaOff                # hits
+@ShakiraVEVO             # hits
+@RauwAlejandro           # hits
+@DaddyYankee             # hits
+@AnuelAA                 # hits
+@CamiloOfficial          # hits
 
-; --- Mainstream / Variétés ---
+; --- Rock / Indie ---
+@TheKillersOfficial      # classics
+@arcticmonkeys           # classics
+@TheStrokes              # classics
+@thelumineers            # pop
+@GreenDay                # classics
+@RadioheadVEVO           # classics
+
+; --- K-Pop ---
+@BTSVEVO                 # pop
+@Blackpink               # pop
+@StrayKids               # pop
+@TWICE                   # pop
+@NewJeans_official       # pop
+
+; --- Mainstream non-musical ---
 @MrBeast                 # general
 
-; --- Labels (gros catalogues, lots de clips récents) ---
-@VEVO                    # hits
-@TraxsourceOfficial      # hits
+; --- Labels officiels (gros catalogues) ---
+@UniversalMusicGroup     # hits
+@WarnerMusicGroup        # hits
+@SonyMusic               # hits
+@DefJamRecordings        # rap
+@AtlanticRecords         # hits
+@RepublicRecords         # hits
+@CapitolRecords          # hits
+@RocaFella               # rap
