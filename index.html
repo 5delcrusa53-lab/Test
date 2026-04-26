@@ -102,6 +102,50 @@
             background: rgba(239, 68, 68, 0.18);
             color: #f87171;
         }
+        
+        /* ===== Integrated YouTube player ===== */
+        @keyframes slideUp {
+            from { transform: translateY(100%); opacity: 0; }
+            to   { transform: translateY(0); opacity: 1; }
+        }
+        .player-anim { animation: slideUp 0.32s cubic-bezier(0.32, 0.72, 0, 1); }
+        
+        /* iframe is parked here when not visible (e.g. minimized to mini-player) */
+        .yt-audio-only {
+            position: absolute !important;
+            width: 1px !important;
+            height: 1px !important;
+            opacity: 0 !important;
+            pointer-events: none;
+            top: 0; left: 0;
+            z-index: -1;
+        }
+        
+        /* When iframe lives behind the album art, fill its container invisibly */
+        #yt-player-host.audio-mode {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            pointer-events: none;
+            z-index: 0;
+        }
+        
+        .album-glow.playing {
+            box-shadow:
+                0 25px 60px -15px rgba(239, 68, 68, 0.4),
+                0 0 80px -20px rgba(168, 85, 247, 0.3);
+        }
+        
+        .queue-row {
+            transition: background-color 0.15s;
+        }
+        .queue-row:active { background: rgba(255,255,255,0.08); }
+        .queue-row.current { background: rgba(239, 68, 68, 0.12); }
+        .queue-row.current .queue-title { color: #f87171; }
+        
+        body.has-mini { padding-bottom: 76px; }
     </style>
 </head>
 <body>
@@ -211,6 +255,129 @@
         </div>
     </main>
     
+    <!-- ============================================================ -->
+    <!-- Integrated YouTube player (used when source = 'video')        -->
+    <!-- ============================================================ -->
+    <div id="player-modal" class="hidden fixed inset-0 bg-zinc-950 z-50 flex flex-col">
+        
+        <!-- Header -->
+        <div class="flex items-center justify-between px-3 sm:px-5 py-3 flex-shrink-0">
+            <button onclick="minimizePlayer()" class="w-10 h-10 flex items-center justify-center text-white hover:bg-white/10 rounded-full transition-colors" aria-label="Réduire">
+                <i class="fa-solid fa-chevron-down text-lg"></i>
+            </button>
+            <div class="text-center flex-1 mx-2 min-w-0">
+                <div class="text-[10px] uppercase tracking-[0.2em] text-zinc-500">Lecture en cours</div>
+                <div class="text-xs text-zinc-300 mt-0.5 truncate">via YouTube</div>
+            </div>
+            <button onclick="openCurrentInBrave()" class="w-10 h-10 flex items-center justify-center text-white hover:bg-white/10 rounded-full transition-colors" aria-label="Ouvrir dans le navigateur">
+                <i class="fa-solid fa-up-right-from-square text-base"></i>
+            </button>
+        </div>
+        
+        <!-- Body -->
+        <div class="flex-1 overflow-y-auto">
+            <div class="px-5 sm:px-8 py-4 sm:py-6 max-w-2xl mx-auto">
+                
+                <!-- Album art (with hidden iframe behind it) -->
+                <div class="relative aspect-square w-full max-w-md mx-auto rounded-2xl overflow-hidden mb-6 bg-zinc-900 album-glow" id="album-art-wrap">
+                    <img id="player-art" src="" class="absolute inset-0 w-full h-full object-cover z-10" alt="">
+                </div>
+                
+                <!-- Track info -->
+                <div class="text-center mb-5">
+                    <h2 id="player-title" class="text-lg sm:text-2xl font-bold leading-tight"></h2>
+                    <div id="player-artist" class="text-sm text-zinc-400 mt-1.5"></div>
+                </div>
+                
+                <!-- Progress -->
+                <div class="mb-4">
+                    <div onclick="seekToPosition(event)" class="h-1 bg-white/10 rounded-full overflow-hidden cursor-pointer hover:h-1.5 transition-all">
+                        <div id="player-progress" class="h-full bg-white w-0" style="transition: width 0.4s linear;"></div>
+                    </div>
+                    <div class="flex justify-between text-xs text-zinc-400 mt-1.5 font-mono">
+                        <span id="player-time-current">0:00</span>
+                        <span id="player-time-total">0:00</span>
+                    </div>
+                </div>
+                
+                <!-- Controls -->
+                <div class="flex items-center justify-center gap-x-3 sm:gap-x-5 mb-8">
+                    <button onclick="playPrev()" class="w-12 h-12 flex items-center justify-center text-white hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-backward-step text-2xl"></i>
+                    </button>
+                    <button onclick="togglePlayPause()" class="w-16 h-16 flex items-center justify-center bg-white text-black rounded-full hover:scale-105 transition-transform shadow-xl">
+                        <i id="player-play-icon" class="fa-solid fa-pause text-2xl"></i>
+                    </button>
+                    <button onclick="playNext()" class="w-12 h-12 flex items-center justify-center text-white hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-forward-step text-2xl"></i>
+                    </button>
+                </div>
+                
+                <!-- Queue -->
+                <div>
+                    <div class="text-sm font-semibold uppercase tracking-wider text-zinc-400 mb-3 px-1">À suivre</div>
+                    <div id="player-queue" class="space-y-1"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Tap-to-play overlay (browser autoplay block fallback) -->
+        <div id="tap-to-play" onclick="forcePlay()" class="hidden absolute inset-0 bg-zinc-950/85 backdrop-blur-sm flex flex-col items-center justify-center z-30 cursor-pointer">
+            <div class="w-20 h-20 rounded-full bg-white text-black flex items-center justify-center mb-4 shadow-2xl">
+                <i class="fa-solid fa-play text-3xl ml-1"></i>
+            </div>
+            <div class="text-white font-semibold text-lg">Appuyer pour lancer</div>
+            <div class="text-zinc-400 text-sm mt-1">Le navigateur a bloqué la lecture automatique</div>
+        </div>
+        
+        <!-- Embed-blocked fallback -->
+        <div id="embed-blocked" class="hidden absolute inset-0 bg-zinc-950/95 backdrop-blur-sm flex flex-col items-center justify-center p-6 text-center z-30">
+            <i class="fa-solid fa-ban text-4xl text-zinc-600 mb-4"></i>
+            <div class="text-white font-semibold mb-1">Ce morceau ne peut pas être joué ici</div>
+            <div class="text-zinc-400 text-sm mb-5 max-w-md">L'artiste a désactivé la lecture intégrée pour cette vidéo.</div>
+            <a id="embed-blocked-link" href="#" target="_blank" rel="noopener" class="px-5 py-2 bg-red-600 hover:bg-red-700 text-white rounded-full text-sm flex items-center gap-x-2 transition-colors">
+                <i class="fa-brands fa-youtube"></i>
+                <span>Ouvrir dans le navigateur</span>
+            </a>
+        </div>
+        
+        <!-- Player host: the actual YT iframe lives in here, reparented as needed -->
+        <div id="yt-player-host" class="audio-mode">
+            <div id="yt-player"></div>
+        </div>
+    </div>
+    
+    <!-- ============================================================ -->
+    <!-- Mini player                                                   -->
+    <!-- ============================================================ -->
+    <div id="mini-player" class="hidden fixed bottom-0 left-0 right-0 z-40 bg-zinc-950/95 backdrop-blur-2xl border-t border-white/10 shadow-[0_-8px_30px_rgba(0,0,0,0.5)]">
+        <div class="absolute top-0 left-0 right-0 h-[2px] bg-white/5 overflow-hidden">
+            <div id="mini-progress" class="h-full bg-gradient-to-r from-red-500 to-orange-400 w-0" style="transition: width 0.4s linear;"></div>
+        </div>
+        <div class="flex items-center gap-x-3 px-3 py-2.5 max-w-[1200px] mx-auto">
+            <div onclick="expandPlayer()" class="flex items-center gap-x-3 flex-1 min-w-0 cursor-pointer">
+                <div class="w-12 h-12 rounded-lg overflow-hidden flex-shrink-0 bg-zinc-800 ring-1 ring-white/10">
+                    <img id="mini-art" src="" class="w-full h-full object-cover" alt="">
+                </div>
+                <div class="flex-1 min-w-0">
+                    <div id="mini-title" class="font-medium truncate text-sm leading-tight"></div>
+                    <div id="mini-artist" class="text-xs text-zinc-400 truncate mt-0.5"></div>
+                </div>
+            </div>
+            <div class="flex items-center gap-x-0.5 flex-shrink-0">
+                <button onclick="event.stopPropagation(); togglePlayPause()" class="w-11 h-11 flex items-center justify-center text-white">
+                    <i id="mini-play-icon" class="fa-solid fa-pause text-xl"></i>
+                </button>
+                <button onclick="event.stopPropagation(); playNext()" class="w-10 h-10 flex items-center justify-center text-zinc-300 hover:text-white">
+                    <i class="fa-solid fa-forward-step text-base"></i>
+                </button>
+                <button onclick="event.stopPropagation(); stopPlayer()" class="w-9 h-9 flex items-center justify-center text-zinc-500 hover:text-white ml-1">
+                    <i class="fa-solid fa-times"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    
     <!-- Footer (honest) -->
     <footer class="px-4 sm:px-8 pb-8 max-w-[1200px] mx-auto">
         <div class="text-[11px] text-zinc-600 leading-relaxed text-center max-w-md mx-auto">
@@ -280,8 +447,8 @@
             
             if (hint) {
                 hint.textContent = source === 'music'
-                    ? 'Lecture audio. Son activé par défaut sur mobile, arrière-plan possible.'
-                    : 'Page YouTube complète. Si la vidéo démarre sans son, touche l\'icône volume.';
+                    ? 'Ouvre dans le navigateur. Avec Brave : pas de pubs, lecture en arrière-plan.'
+                    : 'Lecture intégrée dans Aether. Quelques pubs YouTube possibles.';
             }
             
             try { localStorage.setItem('aether_source', source); } catch (e) {}
@@ -408,17 +575,18 @@
         // ============================================================
         // OPENING TRACKS
         // ============================================================
-        // Two destinations:
-        //   'music' → music.youtube.com (audio-focused, defaults to playing with sound on mobile)
-        //   'video' → m.youtube.com    (full YouTube page; we add &autoplay=1 to nudge autoplay)
-        // Brave's Shields apply on both. Brave's filter rules are most thoroughly tuned
-        // for the main YouTube watch pages; YT Music ad-blocking depends on Brave's
-        // current filter state but is generally effective.
+        // Branch on source:
+        //  'music' → opens music.youtube.com in a new tab (Brave Shields apply)
+        //  'video' → plays in the integrated YouTube IFrame player (stays in app)
         function openTrack(videoId, title, artist) {
-            const url = currentSource === 'music'
-                ? `https://music.youtube.com/watch?v=${encodeURIComponent(videoId)}`
-                : `https://m.youtube.com/watch?v=${encodeURIComponent(videoId)}&autoplay=1`;
-            window.open(url, '_blank', 'noopener');
+            if (currentSource === 'music') {
+                // External: opens in browser (so Brave can block ads)
+                const url = `https://music.youtube.com/watch?v=${encodeURIComponent(videoId)}`;
+                window.open(url, '_blank', 'noopener');
+            } else {
+                // Internal: integrated player. Find the index in the currently visible list.
+                playInIntegratedPlayer(videoId);
+            }
         }
         
         function searchOnYouTube() {
@@ -428,6 +596,325 @@
                 ? `https://music.youtube.com/search?q=${encodeURIComponent(query)}`
                 : `https://m.youtube.com/results?search_query=${encodeURIComponent(query)}`;
             window.open(url, '_blank', 'noopener');
+        }
+        
+        // ============================================================
+        // INTEGRATED YOUTUBE PLAYER (only used when source = 'video')
+        // ============================================================
+        // Uses the official YouTube IFrame API. Loads the canonical youtube.com/embed/
+        // URL which is YouTube's own supported embedding endpoint — same one used by
+        // every blog and news site. This means YouTube ads CAN appear on these embeds;
+        // Brave Shields' ad-filtering on /embed/ pages is less aggressive than on
+        // m.youtube.com/watch, but generally still removes most pre-rolls.
+        
+        let ytPlayer = null;
+        let ytAPIReady = false;
+        let pendingVideoId = null;
+        let playerQueue = [];          // copy of currently-visible filtered tracks
+        let playerIndex = 0;
+        let isPlaying = false;
+        let progressInterval = null;
+        let playerWarmed = false;
+        
+        // Build/refresh the player's queue from the tracks currently visible to the user.
+        // This way "next" follows what they're actually browsing.
+        function buildPlayerQueue(startVideoId) {
+            const query = document.getElementById('search-input').value.toLowerCase().trim();
+            let filtered = tracks;
+            if (currentGenre !== 'all') filtered = filtered.filter(t => t.genre.includes(currentGenre));
+            if (query) filtered = filtered.filter(t =>
+                t.title.toLowerCase().includes(query) ||
+                t.artist.toLowerCase().includes(query)
+            );
+            playerQueue = filtered;
+            playerIndex = playerQueue.findIndex(t => t.id === startVideoId);
+            if (playerIndex < 0) playerIndex = 0;
+        }
+        
+        function playInIntegratedPlayer(videoId) {
+            buildPlayerQueue(videoId);
+            const track = playerQueue[playerIndex];
+            if (!track) return;
+            
+            // Show modal
+            const modal = document.getElementById('player-modal');
+            modal.classList.remove('hidden');
+            modal.classList.remove('player-anim');
+            void modal.offsetWidth;
+            modal.classList.add('player-anim');
+            
+            // Update UI
+            document.getElementById('player-title').textContent = track.title;
+            document.getElementById('player-artist').textContent = track.artist;
+            document.getElementById('player-art').src = `https://i.ytimg.com/vi/${track.id}/mqdefault.jpg`;
+            renderPlayerQueue();
+            
+            // Mini player (so it stays available when minimized)
+            updateMiniPlayer(track);
+            
+            // Hide overlays
+            document.getElementById('tap-to-play').classList.add('hidden');
+            document.getElementById('embed-blocked').classList.add('hidden');
+            
+            // Start the actual player
+            if (!ytAPIReady) {
+                pendingVideoId = videoId;
+                return;
+            }
+            loadVideo(videoId);
+        }
+        
+        // YT IFrame API entry point (called by the script automatically)
+        window.onYouTubeIframeAPIReady = function() {
+            ytAPIReady = true;
+            if (pendingVideoId) {
+                const id = pendingVideoId;
+                pendingVideoId = null;
+                loadVideo(id);
+            }
+        };
+        
+        function loadVideo(videoId) {
+            if (!ytPlayer) {
+                // First creation — uses the user's tap gesture, so autoplay is allowed
+                ytPlayer = new YT.Player('yt-player', {
+                    width: '100%',
+                    height: '100%',
+                    videoId: videoId,
+                    playerVars: {
+                        autoplay: 1,
+                        modestbranding: 1,
+                        rel: 0,
+                        playsinline: 1,
+                        iv_load_policy: 3,
+                        controls: 0,
+                        fs: 0
+                    },
+                    events: {
+                        onReady: () => {
+                            playerWarmed = true;
+                            startProgressTracking();
+                            try { ytPlayer.playVideo(); } catch (e) {}
+                            scheduleAutoplayCheck();
+                        },
+                        onStateChange: onPlayerStateChange,
+                        onError: onPlayerError
+                    }
+                });
+            } else {
+                ytPlayer.loadVideoById(videoId);
+                scheduleAutoplayCheck();
+            }
+        }
+        
+        function onPlayerStateChange(e) {
+            const S = window.YT && YT.PlayerState;
+            if (!S) return;
+            if (e.data === S.PLAYING) {
+                isPlaying = true;
+                updatePlayPauseUI();
+                document.getElementById('tap-to-play').classList.add('hidden');
+                if (window._autoplayCheck) { clearTimeout(window._autoplayCheck); window._autoplayCheck = null; }
+            } else if (e.data === S.PAUSED) {
+                isPlaying = false;
+                updatePlayPauseUI();
+            } else if (e.data === S.ENDED) {
+                playNext();
+            }
+        }
+        
+        function onPlayerError() {
+            // 101/150 = embedding disabled by owner. Show fallback.
+            const track = playerQueue[playerIndex];
+            const overlay = document.getElementById('embed-blocked');
+            const link = document.getElementById('embed-blocked-link');
+            if (track && link) link.href = `https://m.youtube.com/watch?v=${track.id}`;
+            if (overlay) overlay.classList.remove('hidden');
+        }
+        
+        function scheduleAutoplayCheck() {
+            if (window._autoplayCheck) clearTimeout(window._autoplayCheck);
+            window._autoplayCheck = setTimeout(() => {
+                if (!isPlaying && ytPlayer && !document.getElementById('embed-blocked').classList.contains('hidden') === false) {
+                    document.getElementById('tap-to-play').classList.remove('hidden');
+                }
+            }, 2500);
+        }
+        
+        function forcePlay() {
+            document.getElementById('tap-to-play').classList.add('hidden');
+            if (ytPlayer) {
+                try { ytPlayer.unMute(); } catch (e) {}
+                try { ytPlayer.playVideo(); } catch (e) {}
+            }
+        }
+        
+        function togglePlayPause() {
+            if (!ytPlayer) return;
+            try {
+                if (isPlaying) ytPlayer.pauseVideo();
+                else ytPlayer.playVideo();
+            } catch (e) {}
+        }
+        
+        function playNext() {
+            if (!playerQueue.length) return;
+            playerIndex = (playerIndex + 1) % playerQueue.length;
+            const track = playerQueue[playerIndex];
+            document.getElementById('player-title').textContent = track.title;
+            document.getElementById('player-artist').textContent = track.artist;
+            document.getElementById('player-art').src = `https://i.ytimg.com/vi/${track.id}/mqdefault.jpg`;
+            renderPlayerQueue();
+            updateMiniPlayer(track);
+            document.getElementById('embed-blocked').classList.add('hidden');
+            document.getElementById('tap-to-play').classList.add('hidden');
+            loadVideo(track.id);
+        }
+        
+        function playPrev() {
+            if (!playerQueue.length) return;
+            try {
+                if (ytPlayer && ytPlayer.getCurrentTime && ytPlayer.getCurrentTime() > 3) {
+                    ytPlayer.seekTo(0, true);
+                    return;
+                }
+            } catch (e) {}
+            playerIndex = (playerIndex - 1 + playerQueue.length) % playerQueue.length;
+            const track = playerQueue[playerIndex];
+            document.getElementById('player-title').textContent = track.title;
+            document.getElementById('player-artist').textContent = track.artist;
+            document.getElementById('player-art').src = `https://i.ytimg.com/vi/${track.id}/mqdefault.jpg`;
+            renderPlayerQueue();
+            updateMiniPlayer(track);
+            document.getElementById('embed-blocked').classList.add('hidden');
+            document.getElementById('tap-to-play').classList.add('hidden');
+            loadVideo(track.id);
+        }
+        
+        function updatePlayPauseUI() {
+            const cls = isPlaying ? 'fa-pause' : 'fa-play';
+            const old = isPlaying ? 'fa-play' : 'fa-pause';
+            ['player-play-icon', 'mini-play-icon'].forEach(id => {
+                const el = document.getElementById(id);
+                if (!el) return;
+                el.classList.remove(old);
+                el.classList.add(cls);
+            });
+            const art = document.getElementById('album-art-wrap');
+            if (art) art.classList.toggle('playing', isPlaying);
+        }
+        
+        function startProgressTracking() {
+            if (progressInterval) clearInterval(progressInterval);
+            progressInterval = setInterval(() => {
+                if (!ytPlayer || !ytPlayer.getCurrentTime) return;
+                try {
+                    const cur = ytPlayer.getCurrentTime();
+                    const dur = ytPlayer.getDuration();
+                    if (!dur || !isFinite(dur)) return;
+                    const pct = Math.min(100, (cur / dur) * 100);
+                    const p = document.getElementById('player-progress');
+                    const m = document.getElementById('mini-progress');
+                    if (p) p.style.width = pct + '%';
+                    if (m) m.style.width = pct + '%';
+                    const c = document.getElementById('player-time-current');
+                    const t = document.getElementById('player-time-total');
+                    if (c) c.textContent = fmtTime(cur);
+                    if (t) t.textContent = fmtTime(dur);
+                } catch (e) {}
+            }, 500);
+        }
+        
+        function fmtTime(s) {
+            if (!s || !isFinite(s) || s < 0) return '0:00';
+            const m = Math.floor(s / 60);
+            const sec = Math.floor(s % 60);
+            return m + ':' + (sec < 10 ? '0' : '') + sec;
+        }
+        
+        function seekToPosition(event) {
+            if (!ytPlayer || !ytPlayer.getDuration) return;
+            try {
+                const r = event.currentTarget.getBoundingClientRect();
+                const pct = Math.min(1, Math.max(0, (event.clientX - r.left) / r.width));
+                const dur = ytPlayer.getDuration();
+                if (dur > 0) ytPlayer.seekTo(dur * pct, true);
+            } catch (e) {}
+        }
+        
+        function renderPlayerQueue() {
+            const container = document.getElementById('player-queue');
+            if (!container) return;
+            container.innerHTML = playerQueue.map((t, i) => `
+                <div class="queue-row flex items-center gap-x-3 px-2 py-2 rounded-xl cursor-pointer ${i === playerIndex ? 'current' : ''}" onclick="jumpToQueue(${i})">
+                    <div class="w-10 h-10 rounded-md overflow-hidden flex-shrink-0 bg-zinc-800">
+                        <img src="${getThumbnail(t.id)}" class="w-full h-full object-cover" alt="" loading="lazy">
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <div class="queue-title font-medium text-sm truncate">${escapeHtml(t.title)}</div>
+                        <div class="text-xs text-zinc-400 truncate">${escapeHtml(t.artist)}</div>
+                    </div>
+                </div>
+            `).join('');
+        }
+        
+        function jumpToQueue(i) {
+            playerIndex = i;
+            const track = playerQueue[i];
+            if (!track) return;
+            document.getElementById('player-title').textContent = track.title;
+            document.getElementById('player-artist').textContent = track.artist;
+            document.getElementById('player-art').src = `https://i.ytimg.com/vi/${track.id}/mqdefault.jpg`;
+            renderPlayerQueue();
+            updateMiniPlayer(track);
+            document.getElementById('embed-blocked').classList.add('hidden');
+            document.getElementById('tap-to-play').classList.add('hidden');
+            loadVideo(track.id);
+        }
+        
+        function updateMiniPlayer(track) {
+            const mini = document.getElementById('mini-player');
+            mini.classList.remove('hidden');
+            document.body.classList.add('has-mini');
+            document.getElementById('mini-title').textContent = track.title;
+            document.getElementById('mini-artist').textContent = track.artist;
+            document.getElementById('mini-art').src = `https://i.ytimg.com/vi/${track.id}/mqdefault.jpg`;
+        }
+        
+        function minimizePlayer() {
+            // Hide modal but keep player alive in mini-player. Audio keeps going.
+            document.getElementById('player-modal').classList.add('hidden');
+        }
+        
+        function expandPlayer() {
+            const modal = document.getElementById('player-modal');
+            modal.classList.remove('hidden');
+            modal.classList.remove('player-anim');
+            void modal.offsetWidth;
+            modal.classList.add('player-anim');
+        }
+        
+        function stopPlayer() {
+            // Full stop: hide everything, destroy player.
+            document.getElementById('player-modal').classList.add('hidden');
+            document.getElementById('mini-player').classList.add('hidden');
+            document.body.classList.remove('has-mini');
+            if (progressInterval) { clearInterval(progressInterval); progressInterval = null; }
+            if (ytPlayer) {
+                try { ytPlayer.stopVideo(); } catch (e) {}
+                try { ytPlayer.destroy(); } catch (e) {}
+                ytPlayer = null;
+            }
+            // Re-create the mount div for next time
+            const host = document.getElementById('yt-player-host');
+            if (host) host.innerHTML = '<div id="yt-player"></div>';
+            isPlaying = false;
+        }
+        
+        function openCurrentInBrave() {
+            const track = playerQueue[playerIndex];
+            if (!track) return;
+            window.open(`https://m.youtube.com/watch?v=${track.id}`, '_blank', 'noopener');
         }
         
         // ============================================================
@@ -452,5 +939,8 @@
             }
         });
     </script>
+    
+    <!-- YouTube IFrame API: powers the integrated player -->
+    <script src="https://www.youtube.com/iframe_api"></script>
 </body>
 </html>
