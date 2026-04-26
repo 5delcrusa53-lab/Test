@@ -575,6 +575,14 @@
             return `https://i.ytimg.com/vi/${videoId}/mqdefault.jpg`;
         }
         
+        // Detects YouTube's "no thumbnail available" placeholder.
+        // When a video is deleted, private, or region-blocked, YouTube returns
+        // a 120x90 gray placeholder image instead of the normal 320x180 thumbnail.
+        // We check naturalWidth at load time and hide the card if it matches.
+        function isThumbnailValid(img) {
+            return img.naturalWidth > 120;
+        }
+        
         function escapeHtml(str) {
             return String(str ?? '')
                 .replace(/&/g, '&amp;')
@@ -617,7 +625,7 @@
             grid.innerHTML = filtered.map((t, i) => `
                 <div class="track-card cursor-pointer rise" style="animation-delay: ${Math.min(i * 30, 400)}ms" onclick="openTrack('${t.id}', ${escapeHtml(JSON.stringify(t.title))}, ${escapeHtml(JSON.stringify(t.artist))})">
                     <div class="relative aspect-square rounded-xl overflow-hidden bg-zinc-900 shadow-lg">
-                        <img src="${getThumbnail(t.id)}" alt="" loading="lazy" class="w-full h-full object-cover" onerror="this.style.background='linear-gradient(135deg,#1f1f1f,#0a0a0a)'; this.removeAttribute('src');">
+                        <img src="${getThumbnail(t.id)}" alt="" loading="lazy" class="w-full h-full object-cover" onload="if(!isThumbnailValid(this)){this.closest('.track-card').style.display='none';}" onerror="this.closest('.track-card').style.display='none';">
                         <div class="art-overlay absolute inset-0"></div>
                         <button class="play-btn absolute bottom-2 right-2 w-10 h-10 rounded-full bg-white text-black flex items-center justify-center shadow-xl">
                             <i class="fa-solid fa-play text-sm ml-0.5"></i>
@@ -914,7 +922,7 @@
             container.innerHTML = playerQueue.map((t, i) => `
                 <div class="queue-row flex items-center gap-x-3 px-2 py-2 rounded-xl cursor-pointer ${i === playerIndex ? 'current' : ''}" onclick="jumpToQueue(${i})">
                     <div class="w-10 h-10 rounded-md overflow-hidden flex-shrink-0 bg-zinc-800">
-                        <img src="${getThumbnail(t.id)}" class="w-full h-full object-cover" alt="" loading="lazy">
+                        <img src="${getThumbnail(t.id)}" class="w-full h-full object-cover" alt="" loading="lazy" onload="if(!isThumbnailValid(this)){this.closest('.queue-row').style.display='none';}" onerror="this.closest('.queue-row').style.display='none';">
                     </div>
                     <div class="flex-1 min-w-0">
                         <div class="queue-title font-medium text-sm truncate">${escapeHtml(t.title)}</div>
