@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#0a0a0a">
+    <title>Aether Music</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <style>
+        * { font-family: 'Inter', system-ui, sans-serif; -webkit-tap-highlight-color: transparent; }
+        body {
+            background: #0a0a0a;
+            color: #fff;
+            min-height: 100vh;
+            background-image:
+                radial-gradient(circle at 15% 0%, rgba(0, 243, 255, 0.08), transparent 50%),
+                radial-gradient(circle at 85% 100%, rgba(168, 85, 247, 0.06), transparent 50%);
+            background-attachment: fixed;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.04);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .holo-text {
+            background: linear-gradient(120deg, #00f3ff 20%, #a855f7 50%, #ec4899 80%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        /* Track card */
+        .track-card {
+            transition: transform 0.2s cubic-bezier(0.32, 0.72, 0, 1), background-color 0.2s;
+            position: relative;
+        }
+        .track-card:active { transform: scale(0.97); }
+        .track-card .play-btn {
+            opacity: 0;
+            transform: translateY(4px);
+            transition: opacity 0.2s, transform 0.2s;
+        }
+        @media (hover: hover) {
+            .track-card:hover .play-btn { opacity: 1; transform: translateY(0); }
+            .track-card:hover .art-overlay { opacity: 1; }
+        }
+        @media (hover: none) {
+            .track-card .play-btn { opacity: 1; transform: translateY(0); }
+        }
+        .art-overlay {
+            opacity: 0;
+            transition: opacity 0.2s;
+            background: linear-gradient(180deg, transparent 50%, rgba(0,0,0,0.7));
+        }
+        
+        /* Brave banner */
+        .brave-orange { color: #fb542b; }
+        .brave-bg { background: linear-gradient(135deg, #fb542b, #ff8a4a); }
+        
+        /* Genre pills */
+        .pill {
+            transition: background-color 0.15s, color 0.15s;
+        }
+        .pill.active {
+            background: #fff;
+            color: #000;
+        }
+        
+        /* Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 999px; }
+        ::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.2); }
+        
+        /* Subtle entrance animation */
+        @keyframes rise {
+            from { opacity: 0; transform: translateY(8px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+        .rise { animation: rise 0.5s cubic-bezier(0.32, 0.72, 0, 1) both; }
+    </style>
+</head>
+<body>
+    
+    <!-- Header -->
+    <header class="px-4 sm:px-8 pt-5 pb-3 max-w-[1200px] mx-auto">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center gap-x-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-[#00f3ff] to-purple-500 flex items-center justify-center font-bold text-black">
+                    Æ
+                </div>
+                <div>
+                    <div class="font-bold text-lg leading-none">AETHER</div>
+                    <div class="text-[10px] uppercase tracking-[0.2em] text-zinc-500 mt-0.5">Music</div>
+                </div>
+            </div>
+            
+            <!-- Browser status pill -->
+            <div id="browser-status" class="hidden glass rounded-full px-3 py-1.5 text-xs flex items-center gap-x-2 border border-white/10">
+                <span id="browser-status-text">Détection…</span>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Brave install nudge (shown only if not Brave) -->
+    <div id="brave-nudge" class="hidden mx-4 sm:mx-8 max-w-[1200px] sm:mx-auto mb-4">
+        <div class="glass border border-orange-500/20 rounded-2xl p-4 flex items-start gap-x-3">
+            <div class="w-10 h-10 rounded-xl brave-bg flex items-center justify-center flex-shrink-0">
+                <i class="fa-solid fa-shield-halved text-white"></i>
+            </div>
+            <div class="flex-1 min-w-0">
+                <div class="font-semibold text-sm">Pour écouter sans pubs : utilise Brave</div>
+                <div class="text-xs text-zinc-400 mt-1 leading-relaxed">Aether ouvre tes morceaux sur YouTube. Le navigateur Brave bloque automatiquement les pubs YouTube — c'est gratuit et ça marche tout de suite.</div>
+                <div class="flex flex-wrap gap-2 mt-3">
+                    <a href="https://brave.com/download/" target="_blank" rel="noopener" class="brave-bg hover:opacity-90 text-white text-xs font-semibold px-4 py-2 rounded-full inline-flex items-center gap-x-2 transition-opacity">
+                        <i class="fa-solid fa-download"></i>
+                        <span>Télécharger Brave</span>
+                    </a>
+                    <button onclick="dismissNudge()" class="text-xs text-zinc-500 hover:text-white px-3 py-2">Plus tard</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Hero -->
+    <section class="px-4 sm:px-8 pt-2 pb-6 max-w-[1200px] mx-auto rise">
+        <h1 class="text-3xl sm:text-5xl font-bold tracking-tight leading-[1.05]">
+            Ta musique.<br>
+            <span class="holo-text">À portée de tap.</span>
+        </h1>
+        <p class="text-sm sm:text-base text-zinc-400 mt-3 max-w-md">Une sélection curatée. Touche un morceau pour l'ouvrir.</p>
+    </section>
+    
+    <!-- Genre pills -->
+    <section class="px-4 sm:px-8 max-w-[1200px] mx-auto mb-5">
+        <div class="flex gap-x-2 overflow-x-auto pb-1 -mx-1 px-1" style="scrollbar-width: none;">
+            <button onclick="filterGenre('all', this)" class="pill active flex-shrink-0 px-4 py-2 rounded-full text-sm font-medium bg-white/10 whitespace-nowrap">Tout</button>
+            <button onclick="filterGenre('hits', this)" class="pill flex-shrink-0 px-4 py-2 rounded-full text-sm font-medium bg-white/10 whitespace-nowrap">Hits</button>
+            <button onclick="filterGenre('pop', this)" class="pill flex-shrink-0 px-4 py-2 rounded-full text-sm font-medium bg-white/10 whitespace-nowrap">Pop</button>
+            <button onclick="filterGenre('rap', this)" class="pill flex-shrink-0 px-4 py-2 rounded-full text-sm font-medium bg-white/10 whitespace-nowrap">Rap FR</button>
+            <button onclick="filterGenre('chill', this)" class="pill flex-shrink-0 px-4 py-2 rounded-full text-sm font-medium bg-white/10 whitespace-nowrap">Chill</button>
+            <button onclick="filterGenre('classics', this)" class="pill flex-shrink-0 px-4 py-2 rounded-full text-sm font-medium bg-white/10 whitespace-nowrap">Classiques</button>
+        </div>
+    </section>
+    
+    <!-- Search -->
+    <section class="px-4 sm:px-8 max-w-[1200px] mx-auto mb-6">
+        <div class="glass rounded-full px-5 flex items-center border border-white/10">
+            <i class="fa-solid fa-search text-zinc-500 mr-3"></i>
+            <input id="search-input" type="text" placeholder="Rechercher un titre, un artiste…" 
+                   class="flex-1 bg-transparent py-3 outline-none text-sm" 
+                   oninput="renderTracks()">
+            <button id="search-yt-btn" onclick="searchOnYouTube()" class="hidden text-xs text-zinc-400 hover:text-white whitespace-nowrap pl-3">
+                Chercher sur YouTube →
+            </button>
+        </div>
+    </section>
+    
+    <!-- Track grid -->
+    <main class="px-4 sm:px-8 max-w-[1200px] mx-auto pb-24">
+        <div id="track-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4"></div>
+        
+        <div id="empty-state" class="hidden text-center py-16">
+            <i class="fa-solid fa-music text-5xl text-zinc-700 mb-4"></i>
+            <div class="text-zinc-400 text-sm">Aucun morceau ne correspond à "<span id="empty-query"></span>"</div>
+            <button onclick="searchOnYouTube()" class="mt-5 px-5 py-2.5 bg-red-600 hover:bg-red-700 rounded-full text-sm font-semibold inline-flex items-center gap-x-2 transition-colors">
+                <i class="fa-brands fa-youtube"></i>
+                <span>Chercher sur YouTube</span>
+            </button>
+        </div>
+    </main>
+    
+    <!-- Footer (honest) -->
+    <footer class="px-4 sm:px-8 pb-8 max-w-[1200px] mx-auto">
+        <div class="text-[11px] text-zinc-600 leading-relaxed text-center max-w-md mx-auto">
+            Aether ouvre les morceaux sur YouTube. Le blocage des pubs n'est pas effectué par Aether — il est assuré par ton navigateur si tu utilises Brave ou un autre navigateur avec ad-blocker.
+        </div>
+    </footer>
+    
+    <script>
+        // ============================================================
+        // TRACK CATALOG
+        // ============================================================
+        const tracks = [
+            // Hits / Pop
+            { id: 'kJQP7kiw5Fk', title: 'Despacito', artist: 'Luis Fonsi ft. Daddy Yankee', genre: ['hits', 'pop'] },
+            { id: 'JGwWNGJdvx8', title: 'Shape of You', artist: 'Ed Sheeran', genre: ['hits', 'pop'] },
+            { id: 'YQHsXMglC9A', title: 'Hello', artist: 'Adele', genre: ['hits', 'pop'] },
+            { id: 'RgKAFK5djSk', title: 'See You Again', artist: 'Wiz Khalifa ft. Charlie Puth', genre: ['hits'] },
+            { id: '9bZkp7q19f0', title: 'Gangnam Style', artist: 'PSY', genre: ['classics', 'hits'] },
+            { id: 'fJ9rUzIMcZQ', title: 'Bohemian Rhapsody', artist: 'Queen', genre: ['classics'] },
+            { id: 'OPf0YbXqDm0', title: 'Uptown Funk', artist: 'Mark Ronson ft. Bruno Mars', genre: ['hits', 'pop'] },
+            { id: 'CevxZvSJLk8', title: 'Roar', artist: 'Katy Perry', genre: ['pop'] },
+            { id: 'pRpeEdMmmQ0', title: 'Shakira - Waka Waka', artist: 'Shakira', genre: ['hits', 'pop'] },
+            { id: 'iLBBRuVDOo4', title: 'Levitating', artist: 'Dua Lipa', genre: ['pop', 'hits'] },
+            { id: 'RBumgq5yVrA', title: 'Passenger - Let Her Go', artist: 'Passenger', genre: ['chill', 'classics'] },
+            { id: 'hT_nvWreIhg', title: 'Counting Stars', artist: 'OneRepublic', genre: ['pop', 'classics'] },
+            
+            // Rap FR
+            { id: 'XmKv2OdN1Q8', title: 'Bande Organisée', artist: 'JuL, SCH, Naps, Kofs, Elams, Solda, Houari', genre: ['rap'] },
+            { id: 'kJSWtkE6Wq4', title: 'Dans l\'Arène', artist: 'JuL', genre: ['rap'] },
+            { id: 'iyiOu1tIb1c', title: 'Bla Bla Bla', artist: 'Gims', genre: ['rap', 'pop'] },
+            { id: 'tRzDe2Lp_Z4', title: 'Sapés Comme Jamais', artist: 'Maître Gims ft. Niska', genre: ['rap'] },
+            { id: 'NUsoVlDFqZg', title: 'Djadja', artist: 'Aya Nakamura', genre: ['rap', 'pop'] },
+            { id: 'JTBP59cTZsg', title: 'Coco', artist: 'Tiakola', genre: ['rap'] },
+            
+            // Chill
+            { id: 'lTRiuFIWV54', title: 'Banana Pancakes', artist: 'Jack Johnson', genre: ['chill'] },
+            { id: 'B7xai5u_tnk', title: 'Riptide', artist: 'Vance Joy', genre: ['chill', 'pop'] },
+            { id: 'PT2_F-1esPk', title: 'I See Fire', artist: 'Ed Sheeran', genre: ['chill'] },
+            { id: 'l5aZJBLAu1E', title: 'lofi hip hop radio', artist: 'Lofi Girl', genre: ['chill'] },
+            { id: 'jfKfPfyJRdk', title: 'lofi hip hop radio - beats to relax/study', artist: 'Lofi Girl', genre: ['chill'] },
+            
+            // Classiques
+            { id: 'dQw4w9WgXcQ', title: 'Never Gonna Give You Up', artist: 'Rick Astley', genre: ['classics'] },
+            { id: 'L_jWHffIx5E', title: 'Smells Like Teen Spirit', artist: 'Nirvana', genre: ['classics'] },
+            { id: 'btPJPFnesV4', title: 'Eye of the Tiger', artist: 'Survivor', genre: ['classics'] },
+            { id: '1w7OgIMMRc4', title: 'Sweet Child O\' Mine', artist: 'Guns N\' Roses', genre: ['classics'] },
+            { id: '1k8craCGpgs', title: 'Don\'t Stop Believin\'', artist: 'Journey', genre: ['classics'] },
+        ];
+        
+        let currentGenre = 'all';
+        
+        // ============================================================
+        // BROWSER DETECTION
+        // ============================================================
+        // Brave exposes navigator.brave.isBrave() since 2020. It's a Promise.
+        // If it resolves true, we're in Brave. Otherwise, treat as standard browser.
+        async function detectBrowser() {
+            const statusEl = document.getElementById('browser-status');
+            const statusTextEl = document.getElementById('browser-status-text');
+            const nudgeEl = document.getElementById('brave-nudge');
+            
+            let isBrave = false;
+            try {
+                if (navigator.brave && typeof navigator.brave.isBrave === 'function') {
+                    isBrave = await navigator.brave.isBrave();
+                }
+            } catch (e) {
+                isBrave = false;
+            }
+            
+            statusEl.classList.remove('hidden');
+            
+            if (isBrave) {
+                statusTextEl.innerHTML = '<i class="fa-solid fa-shield-halved brave-orange mr-1"></i> <span class="text-orange-300">Brave</span> <span class="text-zinc-500">— Shields actif</span>';
+                statusEl.classList.add('border-orange-500/30');
+                // Don't show the nudge
+                if (sessionStorage.getItem('aether_nudge_dismissed') !== '1') {
+                    // even fresh visit, no nudge needed
+                }
+            } else {
+                statusTextEl.innerHTML = '<i class="fa-solid fa-circle-info text-zinc-500 mr-1"></i> <span class="text-zinc-400">Navigateur standard</span>';
+                if (sessionStorage.getItem('aether_nudge_dismissed') !== '1') {
+                    nudgeEl.classList.remove('hidden');
+                    nudgeEl.classList.add('rise');
+                }
+            }
+        }
+        
+        function dismissNudge() {
+            const nudge = document.getElementById('brave-nudge');
+            nudge.style.transition = 'opacity 0.3s, max-height 0.3s, margin 0.3s';
+            nudge.style.opacity = '0';
+            nudge.style.maxHeight = '0';
+            nudge.style.marginBottom = '0';
+            setTimeout(() => nudge.classList.add('hidden'), 300);
+            try { sessionStorage.setItem('aether_nudge_dismissed', '1'); } catch (e) {}
+        }
+        
+        // ============================================================
+        // RENDERING
+        // ============================================================
+        function getThumbnail(videoId) {
+            // mqdefault is reliable, exists for every video, decent quality (320x180)
+            return `https://i.ytimg.com/vi/${videoId}/mqdefault.jpg`;
+        }
+        
+        function escapeHtml(str) {
+            return String(str ?? '')
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#39;');
+        }
+        
+        function renderTracks() {
+            const grid = document.getElementById('track-grid');
+            const emptyState = document.getElementById('empty-state');
+            const searchBtn = document.getElementById('search-yt-btn');
+            const query = document.getElementById('search-input').value.toLowerCase().trim();
+            
+            let filtered = tracks;
+            if (currentGenre !== 'all') {
+                filtered = filtered.filter(t => t.genre.includes(currentGenre));
+            }
+            if (query) {
+                filtered = filtered.filter(t =>
+                    t.title.toLowerCase().includes(query) ||
+                    t.artist.toLowerCase().includes(query)
+                );
+            }
+            
+            // Show "search on YouTube" button next to input when query is non-empty
+            if (query) searchBtn.classList.remove('hidden');
+            else searchBtn.classList.add('hidden');
+            
+            if (filtered.length === 0) {
+                grid.innerHTML = '';
+                emptyState.classList.remove('hidden');
+                document.getElementById('empty-query').textContent = query || currentGenre;
+                return;
+            }
+            
+            emptyState.classList.add('hidden');
+            
+            grid.innerHTML = filtered.map((t, i) => `
+                <div class="track-card cursor-pointer rise" style="animation-delay: ${Math.min(i * 30, 400)}ms" onclick="openTrack('${t.id}', ${escapeHtml(JSON.stringify(t.title))}, ${escapeHtml(JSON.stringify(t.artist))})">
+                    <div class="relative aspect-square rounded-xl overflow-hidden bg-zinc-900 shadow-lg">
+                        <img src="${getThumbnail(t.id)}" alt="" loading="lazy" class="w-full h-full object-cover" onerror="this.style.background='linear-gradient(135deg,#1f1f1f,#0a0a0a)'; this.removeAttribute('src');">
+                        <div class="art-overlay absolute inset-0"></div>
+                        <button class="play-btn absolute bottom-2 right-2 w-10 h-10 rounded-full bg-white text-black flex items-center justify-center shadow-xl">
+                            <i class="fa-solid fa-play text-sm ml-0.5"></i>
+                        </button>
+                    </div>
+                    <div class="mt-2 px-0.5">
+                        <div class="font-medium text-sm leading-tight line-clamp-2">${escapeHtml(t.title)}</div>
+                        <div class="text-xs text-zinc-500 mt-1 truncate">${escapeHtml(t.artist)}</div>
+                    </div>
+                </div>
+            `).join('');
+        }
+        
+        function filterGenre(genre, btn) {
+            currentGenre = genre;
+            document.querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
+            btn.classList.add('active');
+            renderTracks();
+        }
+        
+        // ============================================================
+        // OPENING TRACKS
+        // ============================================================
+        // We use m.youtube.com (mobile) which is what Brave's filter rules
+        // are tuned for, and which gives Brave full ability to apply Shields.
+        // Embedding via iframe would NOT get the same level of ad-blocking,
+        // because YouTube ads load from googlevideo.com same as the video.
+        function openTrack(videoId, title, artist) {
+            const url = `https://m.youtube.com/watch?v=${encodeURIComponent(videoId)}`;
+            // _blank so navigation away doesn't lose the user's place in Aether
+            window.open(url, '_blank', 'noopener');
+        }
+        
+        function searchOnYouTube() {
+            const query = document.getElementById('search-input').value.trim();
+            if (!query) return;
+            const url = `https://m.youtube.com/results?search_query=${encodeURIComponent(query)}`;
+            window.open(url, '_blank', 'noopener');
+        }
+        
+        // ============================================================
+        // INIT
+        // ============================================================
+        detectBrowser();
+        renderTracks();
+        
+        // Allow Enter key in search to trigger YouTube search
+        document.getElementById('search-input').addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+                const q = e.target.value.trim();
+                if (q) {
+                    // Try local first; if no local results visible, fall through to YT
+                    const filtered = tracks.filter(t =>
+                        t.title.toLowerCase().includes(q.toLowerCase()) ||
+                        t.artist.toLowerCase().includes(q.toLowerCase())
+                    );
+                    if (filtered.length === 0) searchOnYouTube();
+                }
+            }
+        });
+    </script>
+</body>
+</html>
