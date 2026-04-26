@@ -1,6 +1,6 @@
 {
-  "updated": "2026-04-26T09:00:15.086005+00:00",
-  "count": 600,
+  "updated": "2026-04-26T09:05:25.290159+00:00",
+  "count": 640,
   "videos": [
     {
       "id": "bnZxNox3QoU",
@@ -8,7 +8,7 @@
       "channel": "STMPD RCRDS",
       "channelId": "UCB-7IEpKGIdXkgGUObE5D5A",
       "published": "2026-04-25T19:27:31+00:00",
-      "views": 4547,
+      "views": 4587,
       "category": "hits"
     },
     {
@@ -17,7 +17,7 @@
       "channel": "David Guetta",
       "channelId": "UC1l7wYrva1qCH-wgqcHaaRg",
       "published": "2026-04-25T17:00:44+00:00",
-      "views": 10908,
+      "views": 10922,
       "category": "hits"
     },
     {
@@ -35,7 +35,7 @@
       "channel": "Luis Fonsi",
       "channelId": "UCxoq-PAQeAdk_zyg8YS0JqA",
       "published": "2026-04-25T13:02:28+00:00",
-      "views": 5685,
+      "views": 5690,
       "category": "hits"
     },
     {
@@ -44,7 +44,7 @@
       "channel": "The Beatles",
       "channelId": "UCc4K7bAqpdBP8jh1j9XZAww",
       "published": "2026-04-24T21:18:04+00:00",
-      "views": 38315,
+      "views": 38350,
       "category": "classics"
     },
     {
@@ -53,7 +53,7 @@
       "channel": "Vevo",
       "channelId": "UC2pmfLm7iq6Ov1UwYrWYkZA",
       "published": "2026-04-24T19:18:39+00:00",
-      "views": 3975,
+      "views": 3978,
       "category": "rap"
     },
     {
@@ -62,7 +62,7 @@
       "channel": "The Chainsmokers",
       "channelId": "UCq3Ci-h945sbEYXpVlw7rJg",
       "published": "2026-04-24T18:12:24+00:00",
-      "views": 17504,
+      "views": 17534,
       "category": "hits"
     },
     {
@@ -71,7 +71,7 @@
       "channel": "Service95",
       "channelId": "UCY_3wo8FmYeHkp9zoBPBWJA",
       "published": "2026-04-24T17:20:28+00:00",
-      "views": 3589,
+      "views": 3591,
       "category": "pop"
     },
     {
@@ -80,7 +80,7 @@
       "channel": "David Guetta",
       "channelId": "UC1l7wYrva1qCH-wgqcHaaRg",
       "published": "2026-04-24T16:31:07+00:00",
-      "views": 37758,
+      "views": 37798,
       "category": "hits"
     },
     {
@@ -98,7 +98,7 @@
       "channel": "David Guetta",
       "channelId": "UC1l7wYrva1qCH-wgqcHaaRg",
       "published": "2026-04-24T15:01:37+00:00",
-      "views": 25235,
+      "views": 25258,
       "category": "hits"
     },
     {
@@ -107,7 +107,7 @@
       "channel": "STMPD RCRDS",
       "channelId": "UCB-7IEpKGIdXkgGUObE5D5A",
       "published": "2026-04-24T08:41:09+00:00",
-      "views": 12544,
+      "views": 12562,
       "category": "hits"
     },
     {
@@ -116,7 +116,7 @@
       "channel": "Olivia Rodrigo",
       "channelId": "UCy3zgWom-5AGypGX_FVTKpg",
       "published": "2026-04-24T04:20:17+00:00",
-      "views": 685245,
+      "views": 685434,
       "category": "pop"
     },
     {
@@ -125,7 +125,7 @@
       "channel": "David Guetta",
       "channelId": "UC1l7wYrva1qCH-wgqcHaaRg",
       "published": "2026-04-24T04:01:07+00:00",
-      "views": 48283,
+      "views": 48297,
       "category": "hits"
     },
     {
@@ -134,7 +134,7 @@
       "channel": "The Chainsmokers",
       "channelId": "UCq3Ci-h945sbEYXpVlw7rJg",
       "published": "2026-04-24T04:00:37+00:00",
-      "views": 80033,
+      "views": 80199,
       "category": "hits"
     },
     {
@@ -143,7 +143,7 @@
       "channel": "BillieEilishVEVO",
       "channelId": "UCDGmojLIoWpXok597xYo8cg",
       "published": "2026-04-24T04:00:32+00:00",
-      "views": 234632,
+      "views": 234712,
       "category": "pop"
     },
     {
@@ -152,7 +152,7 @@
       "channel": "KarolGVEVO",
       "channelId": "UCz9yS18zJGQObwUL_K-ICnw",
       "published": "2026-04-24T00:00:08+00:00",
-      "views": 681422,
+      "views": 681556,
       "category": "hits"
     },
     {
@@ -161,7 +161,7 @@
       "channel": "Pink Floyd",
       "channelId": "UCY2qt3dw2TQJxvBrDiYGHdQ",
       "published": "2026-04-23T18:17:15+00:00",
-      "views": 17279,
+      "views": 17286,
       "category": "classics"
     },
     {
@@ -179,7 +179,7 @@
       "channel": "David Guetta",
       "channelId": "UC1l7wYrva1qCH-wgqcHaaRg",
       "published": "2026-04-23T16:01:08+00:00",
-      "views": 57867,
+      "views": 57882,
       "category": "hits"
     },
     {
@@ -188,7 +188,7 @@
       "channel": "STMPD RCRDS",
       "channelId": "UCB-7IEpKGIdXkgGUObE5D5A",
       "published": "2026-04-23T12:26:07+00:00",
-      "views": 10140,
+      "views": 10155,
       "category": "hits"
     },
     {
@@ -197,7 +197,7 @@
       "channel": "David Guetta",
       "channelId": "UC1l7wYrva1qCH-wgqcHaaRg",
       "published": "2026-04-23T08:16:35+00:00",
-      "views": 156455,
+      "views": 156653,
       "category": "hits"
     },
     {
@@ -206,7 +206,7 @@
       "channel": "Luis Fonsi",
       "channelId": "UCxoq-PAQeAdk_zyg8YS0JqA",
       "published": "2026-04-22T21:00:05+00:00",
-      "views": 29745,
+      "views": 29747,
       "category": "hits"
     },
     {
@@ -215,7 +215,7 @@
       "channel": "Rihanna",
       "channelId": "UCcgqSM4YEo5vVQpqwN-MaNw",
       "published": "2026-04-22T19:00:00+00:00",
-      "views": 104139,
+      "views": 104215,
       "category": "pop"
     },
     {
@@ -224,7 +224,7 @@
       "channel": "Vevo",
       "channelId": "UC2pmfLm7iq6Ov1UwYrWYkZA",
       "published": "2026-04-22T18:47:09+00:00",
-      "views": 273737,
+      "views": 274352,
       "category": "rap"
     },
     {
@@ -233,7 +233,7 @@
       "channel": "STMPD RCRDS",
       "channelId": "UCB-7IEpKGIdXkgGUObE5D5A",
       "published": "2026-04-22T17:16:09+00:00",
-      "views": 12116,
+      "views": 12120,
       "category": "hits"
     },
     {
@@ -278,7 +278,7 @@
       "channel": "STMPD RCRDS",
       "channelId": "UCB-7IEpKGIdXkgGUObE5D5A",
       "published": "2026-04-21T18:26:27+00:00",
-      "views": 11101,
+      "views": 11105,
       "category": "hits"
     },
     {
@@ -296,7 +296,7 @@
       "channel": "STMPD RCRDS",
       "channelId": "UCB-7IEpKGIdXkgGUObE5D5A",
       "published": "2026-04-21T18:17:39+00:00",
-      "views": 14748,
+      "views": 14754,
       "category": "hits"
     },
     {
@@ -305,7 +305,7 @@
       "channel": "STMPD RCRDS",
       "channelId": "UCB-7IEpKGIdXkgGUObE5D5A",
       "published": "2026-04-21T18:15:02+00:00",
-      "views": 8907,
+      "views": 8908,
       "category": "hits"
     },
     {
@@ -314,7 +314,7 @@
       "channel": "STMPD RCRDS",
       "channelId": "UCB-7IEpKGIdXkgGUObE5D5A",
       "published": "2026-04-21T18:09:07+00:00",
-      "views": 14303,
+      "views": 14340,
       "category": "hits"
     },
     {
@@ -323,7 +323,7 @@
       "channel": "STMPD RCRDS",
       "channelId": "UCB-7IEpKGIdXkgGUObE5D5A",
       "published": "2026-04-21T18:06:06+00:00",
-      "views": 11205,
+      "views": 11208,
       "category": "hits"
     },
     {
@@ -332,7 +332,7 @@
       "channel": "David Guetta",
       "channelId": "UC1l7wYrva1qCH-wgqcHaaRg",
       "published": "2026-04-21T17:28:56+00:00",
-      "views": 332618,
+      "views": 332635,
       "category": "hits"
     },
     {
@@ -341,7 +341,7 @@
       "channel": "The Beatles",
       "channelId": "UCc4K7bAqpdBP8jh1j9XZAww",
       "published": "2026-04-21T17:00:24+00:00",
-      "views": 62305,
+      "views": 62309,
       "category": "classics"
     },
     {
@@ -350,7 +350,7 @@
       "channel": "David Guetta",
       "channelId": "UC1l7wYrva1qCH-wgqcHaaRg",
       "published": "2026-04-21T16:00:49+00:00",
-      "views": 59948,
+      "views": 59953,
       "category": "hits"
     },
     {
@@ -359,7 +359,7 @@
       "channel": "KatyPerryVEVO",
       "channelId": "UC-8Q-hLdECwQmaWNwXitYDw",
       "published": "2026-04-21T16:00:26+00:00",
-      "views": 1935311,
+      "views": 1935752,
       "category": "pop"
     },
     {
@@ -377,7 +377,7 @@
       "channel": "Chillhop Music",
       "channelId": "UCOxqgCwgOqC2lMqC5PYz_Dg",
       "published": "2026-04-21T15:00:06+00:00",
-      "views": 30527,
+      "views": 30548,
       "category": "chill"
     },
     {
@@ -386,7 +386,7 @@
       "channel": "STMPD RCRDS",
       "channelId": "UCB-7IEpKGIdXkgGUObE5D5A",
       "published": "2026-04-21T14:12:07+00:00",
-      "views": 2780,
+      "views": 2776,
       "category": "hits"
     },
     {
@@ -404,7 +404,7 @@
       "channel": "Pink Floyd",
       "channelId": "UCY2qt3dw2TQJxvBrDiYGHdQ",
       "published": "2026-04-20T18:26:35+00:00",
-      "views": 82685,
+      "views": 82691,
       "category": "classics"
     },
     {
@@ -413,7 +413,7 @@
       "channel": "Olivia Rodrigo",
       "channelId": "UCy3zgWom-5AGypGX_FVTKpg",
       "published": "2026-04-20T16:54:02+00:00",
-      "views": 518552,
+      "views": 518621,
       "category": "pop"
     },
     {
@@ -422,7 +422,7 @@
       "channel": "Olivia Rodrigo",
       "channelId": "UCy3zgWom-5AGypGX_FVTKpg",
       "published": "2026-04-20T16:51:01+00:00",
-      "views": 744387,
+      "views": 744466,
       "category": "pop"
     },
     {
@@ -431,7 +431,7 @@
       "channel": "The Chainsmokers",
       "channelId": "UCq3Ci-h945sbEYXpVlw7rJg",
       "published": "2026-04-20T16:18:11+00:00",
-      "views": 14377,
+      "views": 14380,
       "category": "hits"
     },
     {
@@ -440,7 +440,7 @@
       "channel": "HarryStylesVEVO",
       "channelId": "UCbOCbp5gXL8jigIBZLqMPrw",
       "published": "2026-04-20T16:00:06+00:00",
-      "views": 950884,
+      "views": 950947,
       "category": "pop"
     },
     {
@@ -449,7 +449,7 @@
       "channel": "Ariana Grande",
       "channelId": "UC9CoOnJkIBMdeijd9qYoT_g",
       "published": "2026-04-18T15:03:52+00:00",
-      "views": 255747,
+      "views": 255755,
       "category": "pop"
     },
     {
@@ -467,7 +467,7 @@
       "channel": "Pink Floyd",
       "channelId": "UCY2qt3dw2TQJxvBrDiYGHdQ",
       "published": "2026-04-18T13:01:22+00:00",
-      "views": 48716,
+      "views": 48720,
       "category": "classics"
     },
     {
@@ -503,7 +503,7 @@
       "channel": "Pink Floyd",
       "channelId": "UCY2qt3dw2TQJxvBrDiYGHdQ",
       "published": "2026-04-17T18:00:20+00:00",
-      "views": 220111,
+      "views": 220119,
       "category": "classics"
     },
     {
@@ -539,7 +539,7 @@
       "channel": "Ed Sheeran",
       "channelId": "UC0C-w0YjGpqDXGB8IHb662A",
       "published": "2026-04-17T16:46:27+00:00",
-      "views": 178890,
+      "views": 178896,
       "category": "pop"
     },
     {
@@ -548,7 +548,7 @@
       "channel": "STMPD RCRDS",
       "channelId": "UCB-7IEpKGIdXkgGUObE5D5A",
       "published": "2026-04-17T15:15:01+00:00",
-      "views": 8039,
+      "views": 8041,
       "category": "hits"
     },
     {
@@ -557,7 +557,7 @@
       "channel": "The Beatles",
       "channelId": "UCc4K7bAqpdBP8jh1j9XZAww",
       "published": "2026-04-17T15:00:35+00:00",
-      "views": 167865,
+      "views": 167873,
       "category": "classics"
     },
     {
@@ -566,7 +566,7 @@
       "channel": "Olivia Rodrigo",
       "channelId": "UCy3zgWom-5AGypGX_FVTKpg",
       "published": "2026-04-17T05:01:57+00:00",
-      "views": 1151247,
+      "views": 1151294,
       "category": "pop"
     },
     {
@@ -575,7 +575,7 @@
       "channel": "Olivia Rodrigo",
       "channelId": "UCy3zgWom-5AGypGX_FVTKpg",
       "published": "2026-04-17T04:58:09+00:00",
-      "views": 412033,
+      "views": 412049,
       "category": "pop"
     },
     {
@@ -584,7 +584,7 @@
       "channel": "Olivia Rodrigo",
       "channelId": "UCy3zgWom-5AGypGX_FVTKpg",
       "published": "2026-04-17T04:01:00+00:00",
-      "views": 1858713,
+      "views": 1858862,
       "category": "pop"
     },
     {
@@ -593,7 +593,7 @@
       "channel": "Olivia Rodrigo",
       "channelId": "UCy3zgWom-5AGypGX_FVTKpg",
       "published": "2026-04-17T04:00:06+00:00",
-      "views": 21998458,
+      "views": 21999333,
       "category": "pop"
     },
     {
@@ -602,7 +602,7 @@
       "channel": "Justin Bieber",
       "channelId": "UCIwFjwMjI0y7PDBVEO9-bkQ",
       "published": "2026-04-16T22:39:31+00:00",
-      "views": 3235706,
+      "views": 3236194,
       "category": "pop"
     },
     {
@@ -629,7 +629,7 @@
       "channel": "The Beatles",
       "channelId": "UCc4K7bAqpdBP8jh1j9XZAww",
       "published": "2026-04-15T18:00:18+00:00",
-      "views": 414690,
+      "views": 414732,
       "category": "classics"
     },
     {
@@ -647,7 +647,7 @@
       "channel": "The Beatles",
       "channelId": "UCc4K7bAqpdBP8jh1j9XZAww",
       "published": "2026-04-15T17:01:17+00:00",
-      "views": 224453,
+      "views": 224532,
       "category": "classics"
     },
     {
@@ -665,7 +665,7 @@
       "channel": "David Guetta",
       "channelId": "UC1l7wYrva1qCH-wgqcHaaRg",
       "published": "2026-04-15T08:54:14+00:00",
-      "views": 121060,
+      "views": 121074,
       "category": "hits"
     },
     {
@@ -701,7 +701,7 @@
       "channel": "David Guetta",
       "channelId": "UC1l7wYrva1qCH-wgqcHaaRg",
       "published": "2026-04-14T16:42:17+00:00",
-      "views": 109298,
+      "views": 109302,
       "category": "hits"
     },
     {
@@ -710,7 +710,7 @@
       "channel": "David Guetta",
       "channelId": "UC1l7wYrva1qCH-wgqcHaaRg",
       "published": "2026-04-14T13:26:24+00:00",
-      "views": 643649,
+      "views": 643697,
       "category": "hits"
     },
     {
@@ -728,7 +728,7 @@
       "channel": "Olivia Rodrigo",
       "channelId": "UCy3zgWom-5AGypGX_FVTKpg",
       "published": "2026-04-14T00:25:47+00:00",
-      "views": 475749,
+      "views": 475761,
       "category": "pop"
     },
     {
@@ -836,7 +836,7 @@
       "channel": "The Chainsmokers",
       "channelId": "UCq3Ci-h945sbEYXpVlw7rJg",
       "published": "2026-04-10T04:00:00+00:00",
-      "views": 486430,
+      "views": 486501,
       "category": "hits"
     },
     {
@@ -845,7 +845,7 @@
       "channel": "Olivia Rodrigo",
       "channelId": "UCy3zgWom-5AGypGX_FVTKpg",
       "published": "2026-04-09T22:38:25+00:00",
-      "views": 409268,
+      "views": 409274,
       "category": "pop"
     },
     {
@@ -854,7 +854,7 @@
       "channel": "Ed Sheeran",
       "channelId": "UC0C-w0YjGpqDXGB8IHb662A",
       "published": "2026-04-09T22:20:07+00:00",
-      "views": 168232,
+      "views": 168235,
       "category": "pop"
     },
     {
@@ -863,7 +863,7 @@
       "channel": "Ed Sheeran",
       "channelId": "UC0C-w0YjGpqDXGB8IHb662A",
       "published": "2026-04-09T22:01:00+00:00",
-      "views": 94197,
+      "views": 94200,
       "category": "pop"
     },
     {
@@ -917,7 +917,7 @@
       "channel": "Cardi B",
       "channelId": "UCxMAbVFmxKUVGAll0WVGpFw",
       "published": "2026-04-07T16:00:14+00:00",
-      "views": 43189,
+      "views": 43201,
       "category": "rap"
     },
     {
@@ -935,7 +935,7 @@
       "channel": "Chillhop Music",
       "channelId": "UCOxqgCwgOqC2lMqC5PYz_Dg",
       "published": "2026-04-07T15:00:06+00:00",
-      "views": 87429,
+      "views": 87432,
       "category": "chill"
     },
     {
@@ -971,7 +971,7 @@
       "channel": "Cardi B",
       "channelId": "UCxMAbVFmxKUVGAll0WVGpFw",
       "published": "2026-04-06T16:01:13+00:00",
-      "views": 141800,
+      "views": 141815,
       "category": "rap"
     },
     {
@@ -980,7 +980,7 @@
       "channel": "Sabrina Carpenter",
       "channelId": "UCPKWE1H6xhxwPlqUlKgHb_w",
       "published": "2026-04-06T15:00:06+00:00",
-      "views": 21506547,
+      "views": 21508244,
       "category": "pop"
     },
     {
@@ -1061,7 +1061,7 @@
       "channel": "Olivia Rodrigo",
       "channelId": "UCy3zgWom-5AGypGX_FVTKpg",
       "published": "2026-04-02T17:48:50+00:00",
-      "views": 412848,
+      "views": 412857,
       "category": "pop"
     },
     {
@@ -1070,7 +1070,7 @@
       "channel": "Olivia Rodrigo",
       "channelId": "UCy3zgWom-5AGypGX_FVTKpg",
       "published": "2026-04-02T17:44:09+00:00",
-      "views": 415510,
+      "views": 415516,
       "category": "pop"
     },
     {
@@ -1088,7 +1088,7 @@
       "channel": "David Guetta",
       "channelId": "UC1l7wYrva1qCH-wgqcHaaRg",
       "published": "2026-04-02T16:49:57+00:00",
-      "views": 90417,
+      "views": 90420,
       "category": "hits"
     },
     {
@@ -1097,7 +1097,7 @@
       "channel": "Cardi B",
       "channelId": "UCxMAbVFmxKUVGAll0WVGpFw",
       "published": "2026-04-02T16:01:06+00:00",
-      "views": 57021,
+      "views": 57030,
       "category": "rap"
     },
     {
@@ -1106,7 +1106,7 @@
       "channel": "Taylor Swift",
       "channelId": "UCqECaJ8Gagnn7YCbPEzWH6g",
       "published": "2026-04-02T12:00:54+00:00",
-      "views": 4405341,
+      "views": 4405217,
       "category": "pop"
     },
     {
@@ -1115,7 +1115,7 @@
       "channel": "Cardi B",
       "channelId": "UCxMAbVFmxKUVGAll0WVGpFw",
       "published": "2026-04-01T23:22:26+00:00",
-      "views": 66409,
+      "views": 66425,
       "category": "rap"
     },
     {
@@ -1124,7 +1124,7 @@
       "channel": "Sabrina Carpenter",
       "channelId": "UCPKWE1H6xhxwPlqUlKgHb_w",
       "published": "2026-04-01T19:12:48+00:00",
-      "views": 1510373,
+      "views": 1510424,
       "category": "pop"
     },
     {
@@ -1133,7 +1133,7 @@
       "channel": "The Beatles",
       "channelId": "UCc4K7bAqpdBP8jh1j9XZAww",
       "published": "2026-04-01T18:00:26+00:00",
-      "views": 283917,
+      "views": 283919,
       "category": "classics"
     },
     {
@@ -1169,7 +1169,7 @@
       "channel": "Travis Scott",
       "channelId": "UCtxdfwb9wfkoGocVUAJ-Bmg",
       "published": "2026-03-31T02:35:10+00:00",
-      "views": 48529,
+      "views": 48526,
       "category": "rap"
     },
     {
@@ -1178,7 +1178,7 @@
       "channel": "Kanye West",
       "channelId": "UCs6eXM7s8Vl5WcECcRHc2qQ",
       "published": "2026-03-29T15:35:33+00:00",
-      "views": 361226,
+      "views": 361229,
       "category": "rap"
     },
     {
@@ -1187,7 +1187,7 @@
       "channel": "Kanye West",
       "channelId": "UCs6eXM7s8Vl5WcECcRHc2qQ",
       "published": "2026-03-29T13:19:02+00:00",
-      "views": 143098,
+      "views": 143154,
       "category": "rap"
     },
     {
@@ -1214,7 +1214,7 @@
       "channel": "The Beatles",
       "channelId": "UCc4K7bAqpdBP8jh1j9XZAww",
       "published": "2026-03-28T17:00:00+00:00",
-      "views": 397739,
+      "views": 397767,
       "category": "classics"
     },
     {
@@ -1223,7 +1223,7 @@
       "channel": "Kanye West",
       "channelId": "UCs6eXM7s8Vl5WcECcRHc2qQ",
       "published": "2026-03-28T10:15:33+00:00",
-      "views": 3819601,
+      "views": 3819639,
       "category": "rap"
     },
     {
@@ -1232,7 +1232,7 @@
       "channel": "Kanye West",
       "channelId": "UCs6eXM7s8Vl5WcECcRHc2qQ",
       "published": "2026-03-28T10:15:27+00:00",
-      "views": 2156311,
+      "views": 2156340,
       "category": "rap"
     },
     {
@@ -1241,7 +1241,7 @@
       "channel": "Kanye West",
       "channelId": "UCs6eXM7s8Vl5WcECcRHc2qQ",
       "published": "2026-03-28T10:15:24+00:00",
-      "views": 2291996,
+      "views": 2292028,
       "category": "rap"
     },
     {
@@ -1250,7 +1250,7 @@
       "channel": "Kanye West",
       "channelId": "UCs6eXM7s8Vl5WcECcRHc2qQ",
       "published": "2026-03-28T10:15:21+00:00",
-      "views": 1618945,
+      "views": 1618952,
       "category": "rap"
     },
     {
@@ -1259,7 +1259,7 @@
       "channel": "Kanye West",
       "channelId": "UCs6eXM7s8Vl5WcECcRHc2qQ",
       "published": "2026-03-28T10:15:18+00:00",
-      "views": 1910740,
+      "views": 1910758,
       "category": "rap"
     },
     {
@@ -1268,7 +1268,7 @@
       "channel": "Kanye West",
       "channelId": "UCs6eXM7s8Vl5WcECcRHc2qQ",
       "published": "2026-03-28T10:15:15+00:00",
-      "views": 2100912,
+      "views": 2100921,
       "category": "rap"
     },
     {
@@ -1277,7 +1277,7 @@
       "channel": "Kanye West",
       "channelId": "UCs6eXM7s8Vl5WcECcRHc2qQ",
       "published": "2026-03-28T10:15:12+00:00",
-      "views": 1501816,
+      "views": 1501821,
       "category": "rap"
     },
     {
@@ -1286,7 +1286,7 @@
       "channel": "Kanye West",
       "channelId": "UCs6eXM7s8Vl5WcECcRHc2qQ",
       "published": "2026-03-28T10:15:09+00:00",
-      "views": 6598048,
+      "views": 6598155,
       "category": "rap"
     },
     {
@@ -1295,7 +1295,7 @@
       "channel": "Kanye West",
       "channelId": "UCs6eXM7s8Vl5WcECcRHc2qQ",
       "published": "2026-03-28T10:15:06+00:00",
-      "views": 1075330,
+      "views": 1075334,
       "category": "rap"
     },
     {
@@ -1304,7 +1304,7 @@
       "channel": "Kanye West",
       "channelId": "UCs6eXM7s8Vl5WcECcRHc2qQ",
       "published": "2026-03-28T10:15:02+00:00",
-      "views": 1629372,
+      "views": 1629385,
       "category": "rap"
     },
     {
@@ -1313,7 +1313,7 @@
       "channel": "Kanye West",
       "channelId": "UCs6eXM7s8Vl5WcECcRHc2qQ",
       "published": "2026-03-28T10:14:59+00:00",
-      "views": 1287180,
+      "views": 1287187,
       "category": "rap"
     },
     {
@@ -1322,7 +1322,7 @@
       "channel": "Kanye West",
       "channelId": "UCs6eXM7s8Vl5WcECcRHc2qQ",
       "published": "2026-03-28T10:14:56+00:00",
-      "views": 2103638,
+      "views": 2103647,
       "category": "rap"
     },
     {
@@ -1349,7 +1349,7 @@
       "channel": "Pink Floyd",
       "channelId": "UCY2qt3dw2TQJxvBrDiYGHdQ",
       "published": "2026-03-27T18:36:59+00:00",
-      "views": 166894,
+      "views": 166897,
       "category": "classics"
     },
     {
@@ -1358,7 +1358,7 @@
       "channel": "The Beatles",
       "channelId": "UCc4K7bAqpdBP8jh1j9XZAww",
       "published": "2026-03-27T15:47:13+00:00",
-      "views": 883699,
+      "views": 883728,
       "category": "classics"
     },
     {
@@ -1367,7 +1367,7 @@
       "channel": "jbalvinVEVO",
       "channelId": "UCrHL_BF5lHyK43BxLU8-vBQ",
       "published": "2026-03-27T00:00:00+00:00",
-      "views": 7631823,
+      "views": 7631845,
       "category": "hits"
     },
     {
@@ -1394,7 +1394,7 @@
       "channel": "The Beatles",
       "channelId": "UCc4K7bAqpdBP8jh1j9XZAww",
       "published": "2026-03-25T18:00:14+00:00",
-      "views": 343355,
+      "views": 343348,
       "category": "classics"
     },
     {
@@ -1457,7 +1457,7 @@
       "channel": "Chillhop Music",
       "channelId": "UCOxqgCwgOqC2lMqC5PYz_Dg",
       "published": "2026-03-24T16:00:06+00:00",
-      "views": 152465,
+      "views": 152471,
       "category": "chill"
     },
     {
@@ -1520,7 +1520,7 @@
       "channel": "Chillhop Music",
       "channelId": "UCOxqgCwgOqC2lMqC5PYz_Dg",
       "published": "2026-03-17T15:51:00+00:00",
-      "views": 168075,
+      "views": 168093,
       "category": "chill"
     },
     {
@@ -1538,7 +1538,7 @@
       "channel": "Ed Sheeran",
       "channelId": "UC0C-w0YjGpqDXGB8IHb662A",
       "published": "2026-03-16T12:53:44+00:00",
-      "views": 235150,
+      "views": 235166,
       "category": "pop"
     },
     {
@@ -1592,7 +1592,7 @@
       "channel": "Chillhop Music",
       "channelId": "UCOxqgCwgOqC2lMqC5PYz_Dg",
       "published": "2026-03-10T16:00:06+00:00",
-      "views": 213897,
+      "views": 213905,
       "category": "chill"
     },
     {
@@ -1601,7 +1601,7 @@
       "channel": "Bruno Mars",
       "channelId": "UCoUM-UJ7rirJYP8CQ0EIaHA",
       "published": "2026-03-09T16:10:04+00:00",
-      "views": 1144854,
+      "views": 1144872,
       "category": "pop"
     },
     {
@@ -1646,7 +1646,7 @@
       "channel": "HarryStylesVEVO",
       "channelId": "UCbOCbp5gXL8jigIBZLqMPrw",
       "published": "2026-03-06T17:00:06+00:00",
-      "views": 15301405,
+      "views": 15301530,
       "category": "pop"
     },
     {
@@ -1655,7 +1655,7 @@
       "channel": "HarryStylesVEVO",
       "channelId": "UCbOCbp5gXL8jigIBZLqMPrw",
       "published": "2026-03-06T05:01:03+00:00",
-      "views": 1499082,
+      "views": 1499090,
       "category": "pop"
     },
     {
@@ -1664,7 +1664,7 @@
       "channel": "HarryStylesVEVO",
       "channelId": "UCbOCbp5gXL8jigIBZLqMPrw",
       "published": "2026-03-06T05:00:53+00:00",
-      "views": 1380292,
+      "views": 1380304,
       "category": "pop"
     },
     {
@@ -1673,7 +1673,7 @@
       "channel": "HarryStylesVEVO",
       "channelId": "UCbOCbp5gXL8jigIBZLqMPrw",
       "published": "2026-03-06T05:00:49+00:00",
-      "views": 2224027,
+      "views": 2224044,
       "category": "pop"
     },
     {
@@ -1682,7 +1682,7 @@
       "channel": "HarryStylesVEVO",
       "channelId": "UCbOCbp5gXL8jigIBZLqMPrw",
       "published": "2026-03-06T05:00:47+00:00",
-      "views": 920144,
+      "views": 920147,
       "category": "pop"
     },
     {
@@ -1691,7 +1691,7 @@
       "channel": "HarryStylesVEVO",
       "channelId": "UCbOCbp5gXL8jigIBZLqMPrw",
       "published": "2026-03-06T05:00:44+00:00",
-      "views": 2499953,
+      "views": 2499972,
       "category": "pop"
     },
     {
@@ -1700,7 +1700,7 @@
       "channel": "HarryStylesVEVO",
       "channelId": "UCbOCbp5gXL8jigIBZLqMPrw",
       "published": "2026-03-06T05:00:41+00:00",
-      "views": 1469206,
+      "views": 1469213,
       "category": "pop"
     },
     {
@@ -1709,7 +1709,7 @@
       "channel": "HarryStylesVEVO",
       "channelId": "UCbOCbp5gXL8jigIBZLqMPrw",
       "published": "2026-03-06T05:00:30+00:00",
-      "views": 1438107,
+      "views": 1438118,
       "category": "pop"
     },
     {
@@ -1718,7 +1718,7 @@
       "channel": "HarryStylesVEVO",
       "channelId": "UCbOCbp5gXL8jigIBZLqMPrw",
       "published": "2026-03-06T05:00:28+00:00",
-      "views": 1976871,
+      "views": 1976879,
       "category": "pop"
     },
     {
@@ -1727,7 +1727,7 @@
       "channel": "HarryStylesVEVO",
       "channelId": "UCbOCbp5gXL8jigIBZLqMPrw",
       "published": "2026-03-06T05:00:25+00:00",
-      "views": 2023842,
+      "views": 2023857,
       "category": "pop"
     },
     {
@@ -1736,7 +1736,7 @@
       "channel": "HarryStylesVEVO",
       "channelId": "UCbOCbp5gXL8jigIBZLqMPrw",
       "published": "2026-03-06T05:00:21+00:00",
-      "views": 1655716,
+      "views": 1655733,
       "category": "pop"
     },
     {
@@ -1745,7 +1745,7 @@
       "channel": "HarryStylesVEVO",
       "channelId": "UCbOCbp5gXL8jigIBZLqMPrw",
       "published": "2026-03-06T05:00:15+00:00",
-      "views": 1092760,
+      "views": 1092768,
       "category": "pop"
     },
     {
@@ -1754,7 +1754,7 @@
       "channel": "HarryStylesVEVO",
       "channelId": "UCbOCbp5gXL8jigIBZLqMPrw",
       "published": "2026-03-06T05:00:13+00:00",
-      "views": 1501445,
+      "views": 1501454,
       "category": "pop"
     },
     {
@@ -1772,7 +1772,7 @@
       "channel": "Beast Philanthropy",
       "channelId": "UCAiLfjNXkNv24uhpzUgPa6A",
       "published": "2026-03-04T17:00:01+00:00",
-      "views": 9429444,
+      "views": 9431299,
       "category": "general"
     },
     {
@@ -1781,7 +1781,7 @@
       "channel": "Cardi B",
       "channelId": "UCxMAbVFmxKUVGAll0WVGpFw",
       "published": "2026-03-03T17:00:25+00:00",
-      "views": 81719,
+      "views": 81732,
       "category": "rap"
     },
     {
@@ -1790,7 +1790,7 @@
       "channel": "Cardi B",
       "channelId": "UCxMAbVFmxKUVGAll0WVGpFw",
       "published": "2026-03-02T19:59:02+00:00",
-      "views": 98551,
+      "views": 98554,
       "category": "rap"
     },
     {
@@ -1799,7 +1799,7 @@
       "channel": "HarryStylesVEVO",
       "channelId": "UCbOCbp5gXL8jigIBZLqMPrw",
       "published": "2026-03-01T02:36:05+00:00",
-      "views": 5650379,
+      "views": 5650402,
       "category": "pop"
     },
     {
@@ -1808,7 +1808,7 @@
       "channel": "Bruno Mars",
       "channelId": "UCoUM-UJ7rirJYP8CQ0EIaHA",
       "published": "2026-02-27T16:21:09+00:00",
-      "views": 577480,
+      "views": 577490,
       "category": "pop"
     },
     {
@@ -1817,7 +1817,7 @@
       "channel": "Ed Sheeran",
       "channelId": "UC0C-w0YjGpqDXGB8IHb662A",
       "published": "2026-02-27T11:36:30+00:00",
-      "views": 257898,
+      "views": 257899,
       "category": "pop"
     },
     {
@@ -1826,7 +1826,7 @@
       "channel": "Bruno Mars",
       "channelId": "UCoUM-UJ7rirJYP8CQ0EIaHA",
       "published": "2026-02-27T05:00:47+00:00",
-      "views": 5157757,
+      "views": 5157840,
       "category": "pop"
     },
     {
@@ -1835,7 +1835,7 @@
       "channel": "Bruno Mars",
       "channelId": "UCoUM-UJ7rirJYP8CQ0EIaHA",
       "published": "2026-02-27T05:00:42+00:00",
-      "views": 2030324,
+      "views": 2030339,
       "category": "pop"
     },
     {
@@ -1844,7 +1844,7 @@
       "channel": "Bruno Mars",
       "channelId": "UCoUM-UJ7rirJYP8CQ0EIaHA",
       "published": "2026-02-27T05:00:36+00:00",
-      "views": 1436470,
+      "views": 1436484,
       "category": "pop"
     },
     {
@@ -1853,7 +1853,7 @@
       "channel": "Bruno Mars",
       "channelId": "UCoUM-UJ7rirJYP8CQ0EIaHA",
       "published": "2026-02-27T05:00:31+00:00",
-      "views": 2423463,
+      "views": 2423489,
       "category": "pop"
     },
     {
@@ -1862,7 +1862,7 @@
       "channel": "Bruno Mars",
       "channelId": "UCoUM-UJ7rirJYP8CQ0EIaHA",
       "published": "2026-02-27T05:00:26+00:00",
-      "views": 4581371,
+      "views": 4581424,
       "category": "pop"
     },
     {
@@ -1871,7 +1871,7 @@
       "channel": "Bruno Mars",
       "channelId": "UCoUM-UJ7rirJYP8CQ0EIaHA",
       "published": "2026-02-27T05:00:21+00:00",
-      "views": 3324603,
+      "views": 3324650,
       "category": "pop"
     },
     {
@@ -1880,7 +1880,7 @@
       "channel": "Bruno Mars",
       "channelId": "UCoUM-UJ7rirJYP8CQ0EIaHA",
       "published": "2026-02-27T05:00:14+00:00",
-      "views": 4552043,
+      "views": 4552232,
       "category": "pop"
     },
     {
@@ -1889,7 +1889,7 @@
       "channel": "Bruno Mars",
       "channelId": "UCoUM-UJ7rirJYP8CQ0EIaHA",
       "published": "2026-02-27T05:00:08+00:00",
-      "views": 77223053,
+      "views": 77224752,
       "category": "pop"
     },
     {
@@ -1907,7 +1907,7 @@
       "channel": "jbalvinVEVO",
       "channelId": "UCrHL_BF5lHyK43BxLU8-vBQ",
       "published": "2026-02-27T00:00:07+00:00",
-      "views": 12235578,
+      "views": 12235633,
       "category": "hits"
     },
     {
@@ -1952,7 +1952,7 @@
       "channel": "Taylor Swift",
       "channelId": "UCqECaJ8Gagnn7YCbPEzWH6g",
       "published": "2026-02-23T19:30:22+00:00",
-      "views": 460819,
+      "views": 460815,
       "category": "pop"
     },
     {
@@ -1970,7 +1970,7 @@
       "channel": "Taylor Swift",
       "channelId": "UCqECaJ8Gagnn7YCbPEzWH6g",
       "published": "2026-02-23T19:30:13+00:00",
-      "views": 129049,
+      "views": 129050,
       "category": "pop"
     },
     {
@@ -1979,7 +1979,7 @@
       "channel": "Taylor Swift",
       "channelId": "UCqECaJ8Gagnn7YCbPEzWH6g",
       "published": "2026-02-23T19:30:06+00:00",
-      "views": 139295,
+      "views": 139291,
       "category": "pop"
     },
     {
@@ -2006,7 +2006,7 @@
       "channel": "Sabrina Carpenter",
       "channelId": "UCPKWE1H6xhxwPlqUlKgHb_w",
       "published": "2026-02-18T17:00:15+00:00",
-      "views": 8736243,
+      "views": 8736815,
       "category": "pop"
     },
     {
@@ -2015,7 +2015,7 @@
       "channel": "Bruno Mars",
       "channelId": "UCoUM-UJ7rirJYP8CQ0EIaHA",
       "published": "2026-02-18T14:00:17+00:00",
-      "views": 7269590,
+      "views": 7269657,
       "category": "pop"
     },
     {
@@ -2033,7 +2033,7 @@
       "channel": "Bruno Mars",
       "channelId": "UCoUM-UJ7rirJYP8CQ0EIaHA",
       "published": "2026-02-13T05:36:28+00:00",
-      "views": 787355,
+      "views": 787358,
       "category": "pop"
     },
     {
@@ -2060,7 +2060,7 @@
       "channel": "Taylor Swift",
       "channelId": "UCqECaJ8Gagnn7YCbPEzWH6g",
       "published": "2026-02-08T13:00:02+00:00",
-      "views": 21797379,
+      "views": 21797126,
       "category": "pop"
     },
     {
@@ -2078,7 +2078,7 @@
       "channel": "Ed Sheeran",
       "channelId": "UC0C-w0YjGpqDXGB8IHb662A",
       "published": "2026-02-02T11:52:24+00:00",
-      "views": 811618,
+      "views": 811620,
       "category": "pop"
     },
     {
@@ -2096,7 +2096,7 @@
       "channel": "Cardi B",
       "channelId": "UCxMAbVFmxKUVGAll0WVGpFw",
       "published": "2026-01-26T17:00:26+00:00",
-      "views": 361266,
+      "views": 361299,
       "category": "rap"
     },
     {
@@ -2105,7 +2105,7 @@
       "channel": "Beast Philanthropy",
       "channelId": "UCAiLfjNXkNv24uhpzUgPa6A",
       "published": "2026-01-25T17:00:02+00:00",
-      "views": 8455713,
+      "views": 8455802,
       "category": "general"
     },
     {
@@ -2132,7 +2132,7 @@
       "channel": "Cardi B",
       "channelId": "UCxMAbVFmxKUVGAll0WVGpFw",
       "published": "2026-01-22T17:00:17+00:00",
-      "views": 206272,
+      "views": 206273,
       "category": "rap"
     },
     {
@@ -2159,7 +2159,7 @@
       "channel": "Cardi B",
       "channelId": "UCxMAbVFmxKUVGAll0WVGpFw",
       "published": "2026-01-14T17:00:50+00:00",
-      "views": 173349,
+      "views": 173352,
       "category": "rap"
     },
     {
@@ -2177,7 +2177,7 @@
       "channel": "Bruno Mars",
       "channelId": "UCoUM-UJ7rirJYP8CQ0EIaHA",
       "published": "2026-01-10T20:58:44+00:00",
-      "views": 1909815,
+      "views": 1909817,
       "category": "pop"
     },
     {
@@ -2186,7 +2186,7 @@
       "channel": "Bruno Mars",
       "channelId": "UCoUM-UJ7rirJYP8CQ0EIaHA",
       "published": "2026-01-09T05:01:04+00:00",
-      "views": 120550997,
+      "views": 120551798,
       "category": "pop"
     },
     {
@@ -2204,7 +2204,7 @@
       "channel": "Sabrina Carpenter",
       "channelId": "UCPKWE1H6xhxwPlqUlKgHb_w",
       "published": "2025-12-24T17:01:25+00:00",
-      "views": 4538289,
+      "views": 4538359,
       "category": "pop"
     },
     {
@@ -2231,7 +2231,7 @@
       "channel": "Shawn Mendes",
       "channelId": "UCAvCL8hyXjSUHKEGuUPr1BA",
       "published": "2025-12-19T17:00:31+00:00",
-      "views": 1057364,
+      "views": 1057384,
       "category": "pop"
     },
     {
@@ -2240,7 +2240,7 @@
       "channel": "Shawn Mendes",
       "channelId": "UCAvCL8hyXjSUHKEGuUPr1BA",
       "published": "2025-12-19T17:00:27+00:00",
-      "views": 788961,
+      "views": 788994,
       "category": "pop"
     },
     {
@@ -2267,7 +2267,7 @@
       "channel": "Travis Scott",
       "channelId": "UCtxdfwb9wfkoGocVUAJ-Bmg",
       "published": "2025-12-17T17:00:18+00:00",
-      "views": 7554791,
+      "views": 7554856,
       "category": "rap"
     },
     {
@@ -2276,7 +2276,7 @@
       "channel": "Taylor Swift",
       "channelId": "UCqECaJ8Gagnn7YCbPEzWH6g",
       "published": "2025-12-11T15:35:30+00:00",
-      "views": 1300228,
+      "views": 1300224,
       "category": "pop"
     },
     {
@@ -2285,7 +2285,7 @@
       "channel": "KarolGVEVO",
       "channelId": "UCz9yS18zJGQObwUL_K-ICnw",
       "published": "2025-12-10T22:00:07+00:00",
-      "views": 9407121,
+      "views": 9407125,
       "category": "hits"
     },
     {
@@ -2294,7 +2294,7 @@
       "channel": "KarolGVEVO",
       "channelId": "UCz9yS18zJGQObwUL_K-ICnw",
       "published": "2025-12-07T23:00:43+00:00",
-      "views": 13334130,
+      "views": 13334159,
       "category": "hits"
     },
     {
@@ -2303,7 +2303,7 @@
       "channel": "Olivia Rodrigo",
       "channelId": "UCy3zgWom-5AGypGX_FVTKpg",
       "published": "2025-12-06T07:39:06+00:00",
-      "views": 615921,
+      "views": 615924,
       "category": "pop"
     },
     {
@@ -2312,7 +2312,7 @@
       "channel": "Sabrina Carpenter",
       "channelId": "UCPKWE1H6xhxwPlqUlKgHb_w",
       "published": "2025-12-03T18:59:59+00:00",
-      "views": 3545244,
+      "views": 3545302,
       "category": "pop"
     },
     {
@@ -2330,7 +2330,7 @@
       "channel": "Taylor Swift",
       "channelId": "UCqECaJ8Gagnn7YCbPEzWH6g",
       "published": "2025-11-28T05:01:16+00:00",
-      "views": 1858442,
+      "views": 1858432,
       "category": "pop"
     },
     {
@@ -2339,7 +2339,7 @@
       "channel": "Sabrina Carpenter",
       "channelId": "UCPKWE1H6xhxwPlqUlKgHb_w",
       "published": "2025-11-24T19:23:23+00:00",
-      "views": 2008254,
+      "views": 2008288,
       "category": "pop"
     },
     {
@@ -2348,7 +2348,7 @@
       "channel": "Sabrina Carpenter",
       "channelId": "UCPKWE1H6xhxwPlqUlKgHb_w",
       "published": "2025-11-24T19:22:06+00:00",
-      "views": 2406394,
+      "views": 2406453,
       "category": "pop"
     },
     {
@@ -2375,7 +2375,7 @@
       "channel": "KatyPerryVEVO",
       "channelId": "UC-8Q-hLdECwQmaWNwXitYDw",
       "published": "2025-11-07T00:00:07+00:00",
-      "views": 10095511,
+      "views": 10095537,
       "category": "pop"
     },
     {
@@ -2384,7 +2384,7 @@
       "channel": "jbalvinVEVO",
       "channelId": "UCrHL_BF5lHyK43BxLU8-vBQ",
       "published": "2025-11-06T15:00:31+00:00",
-      "views": 228056,
+      "views": 228051,
       "category": "hits"
     },
     {
@@ -2420,7 +2420,7 @@
       "channel": "Taylor Swift",
       "channelId": "UCqECaJ8Gagnn7YCbPEzWH6g",
       "published": "2025-10-31T04:00:38+00:00",
-      "views": 2352053,
+      "views": 2351965,
       "category": "pop"
     },
     {
@@ -2438,7 +2438,7 @@
       "channel": "Sabrina Carpenter",
       "channelId": "UCPKWE1H6xhxwPlqUlKgHb_w",
       "published": "2025-10-29T19:22:48+00:00",
-      "views": 1626627,
+      "views": 1626657,
       "category": "pop"
     },
     {
@@ -2447,7 +2447,7 @@
       "channel": "Sabrina Carpenter",
       "channelId": "UCPKWE1H6xhxwPlqUlKgHb_w",
       "published": "2025-10-29T19:21:36+00:00",
-      "views": 1398113,
+      "views": 1398157,
       "category": "pop"
     },
     {
@@ -2456,7 +2456,7 @@
       "channel": "Doja Cat",
       "channelId": "UCzpl23pGTHVYqvKsgY0A-_w",
       "published": "2025-10-27T16:01:11+00:00",
-      "views": 438800,
+      "views": 438802,
       "category": "rap"
     },
     {
@@ -2465,7 +2465,7 @@
       "channel": "Selena Gomez",
       "channelId": "UCPNxhDvTcytIdvwXWAm43cA",
       "published": "2025-10-25T16:13:00+00:00",
-      "views": 472393,
+      "views": 472395,
       "category": "pop"
     },
     {
@@ -2483,7 +2483,7 @@
       "channel": "Selena Gomez",
       "channelId": "UCPNxhDvTcytIdvwXWAm43cA",
       "published": "2025-10-23T04:00:35+00:00",
-      "views": 9442640,
+      "views": 9442652,
       "category": "pop"
     },
     {
@@ -2501,7 +2501,7 @@
       "channel": "Selena Gomez",
       "channelId": "UCPNxhDvTcytIdvwXWAm43cA",
       "published": "2025-10-10T17:01:24+00:00",
-      "views": 1593068,
+      "views": 1593074,
       "category": "pop"
     },
     {
@@ -2510,7 +2510,7 @@
       "channel": "Selena Gomez",
       "channelId": "UCPNxhDvTcytIdvwXWAm43cA",
       "published": "2025-10-10T17:01:16+00:00",
-      "views": 3025496,
+      "views": 3025504,
       "category": "pop"
     },
     {
@@ -2546,7 +2546,7 @@
       "channel": "Selena Gomez",
       "channelId": "UCPNxhDvTcytIdvwXWAm43cA",
       "published": "2025-10-10T17:00:28+00:00",
-      "views": 1278332,
+      "views": 1278341,
       "category": "pop"
     },
     {
@@ -2573,7 +2573,7 @@
       "channel": "Selena Gomez",
       "channelId": "UCPNxhDvTcytIdvwXWAm43cA",
       "published": "2025-10-10T17:00:12+00:00",
-      "views": 116021,
+      "views": 116022,
       "category": "pop"
     },
     {
@@ -2591,7 +2591,7 @@
       "channel": "Selena Gomez",
       "channelId": "UCPNxhDvTcytIdvwXWAm43cA",
       "published": "2025-10-10T17:00:03+00:00",
-      "views": 580628,
+      "views": 580630,
       "category": "pop"
     },
     {
@@ -2609,7 +2609,7 @@
       "channel": "Doja Cat",
       "channelId": "UCzpl23pGTHVYqvKsgY0A-_w",
       "published": "2025-10-10T13:02:00+00:00",
-      "views": 228163,
+      "views": 228166,
       "category": "rap"
     },
     {
@@ -2618,7 +2618,7 @@
       "channel": "Taylor Swift",
       "channelId": "UCqECaJ8Gagnn7YCbPEzWH6g",
       "published": "2025-10-09T19:58:35+00:00",
-      "views": 496357240,
+      "views": 496357179,
       "category": "pop"
     },
     {
@@ -2636,7 +2636,7 @@
       "channel": "Sabrina Carpenter",
       "channelId": "UCPKWE1H6xhxwPlqUlKgHb_w",
       "published": "2025-10-07T19:31:40+00:00",
-      "views": 1870346,
+      "views": 1870376,
       "category": "pop"
     },
     {
@@ -2645,7 +2645,7 @@
       "channel": "Justin Bieber",
       "channelId": "UCIwFjwMjI0y7PDBVEO9-bkQ",
       "published": "2025-10-07T14:01:06+00:00",
-      "views": 12656180,
+      "views": 12656189,
       "category": "pop"
     },
     {
@@ -2672,7 +2672,7 @@
       "channel": "Led Zeppelin",
       "channelId": "UCaKZA66vM_TUpetUNohmR0A",
       "published": "2025-10-03T17:11:16+00:00",
-      "views": 123984,
+      "views": 124031,
       "category": "classics"
     },
     {
@@ -2681,7 +2681,7 @@
       "channel": "Bruno Mars",
       "channelId": "UCoUM-UJ7rirJYP8CQ0EIaHA",
       "published": "2025-10-03T04:00:56+00:00",
-      "views": 1597771,
+      "views": 1597775,
       "category": "pop"
     },
     {
@@ -2717,7 +2717,7 @@
       "channel": "Doja Cat",
       "channelId": "UCzpl23pGTHVYqvKsgY0A-_w",
       "published": "2025-09-30T00:30:08+00:00",
-      "views": 6029183,
+      "views": 6029200,
       "category": "rap"
     },
     {
@@ -2744,7 +2744,7 @@
       "channel": "Doja Cat",
       "channelId": "UCzpl23pGTHVYqvKsgY0A-_w",
       "published": "2025-09-26T04:02:07+00:00",
-      "views": 12283335,
+      "views": 12283358,
       "category": "rap"
     },
     {
@@ -2762,7 +2762,7 @@
       "channel": "Doja Cat",
       "channelId": "UCzpl23pGTHVYqvKsgY0A-_w",
       "published": "2025-09-26T04:01:25+00:00",
-      "views": 3632724,
+      "views": 3632759,
       "category": "rap"
     },
     {
@@ -2816,7 +2816,7 @@
       "channel": "KarolGVEVO",
       "channelId": "UCz9yS18zJGQObwUL_K-ICnw",
       "published": "2025-09-24T08:00:07+00:00",
-      "views": 131877,
+      "views": 131876,
       "category": "hits"
     },
     {
@@ -2834,7 +2834,7 @@
       "channel": "Justin Bieber",
       "channelId": "UCIwFjwMjI0y7PDBVEO9-bkQ",
       "published": "2025-09-22T05:16:16+00:00",
-      "views": 20409305,
+      "views": 20409453,
       "category": "pop"
     },
     {
@@ -2870,7 +2870,7 @@
       "channel": "KarolGVEVO",
       "channelId": "UCz9yS18zJGQObwUL_K-ICnw",
       "published": "2025-09-19T18:00:34+00:00",
-      "views": 232601,
+      "views": 232600,
       "category": "hits"
     },
     {
@@ -2888,7 +2888,7 @@
       "channel": "KarolGVEVO",
       "channelId": "UCz9yS18zJGQObwUL_K-ICnw",
       "published": "2025-09-19T18:00:20+00:00",
-      "views": 115026,
+      "views": 115023,
       "category": "hits"
     },
     {
@@ -2906,7 +2906,7 @@
       "channel": "Sabrina Carpenter",
       "channelId": "UCPKWE1H6xhxwPlqUlKgHb_w",
       "published": "2025-09-19T16:45:22+00:00",
-      "views": 1443755,
+      "views": 1443779,
       "category": "pop"
     },
     {
@@ -2915,7 +2915,7 @@
       "channel": "Sabrina Carpenter",
       "channelId": "UCPKWE1H6xhxwPlqUlKgHb_w",
       "published": "2025-09-16T18:12:26+00:00",
-      "views": 1124017,
+      "views": 1124036,
       "category": "pop"
     },
     {
@@ -2924,7 +2924,7 @@
       "channel": "Sabrina Carpenter",
       "channelId": "UCPKWE1H6xhxwPlqUlKgHb_w",
       "published": "2025-09-16T18:11:22+00:00",
-      "views": 922554,
+      "views": 922565,
       "category": "pop"
     },
     {
@@ -2933,7 +2933,7 @@
       "channel": "Sabrina Carpenter",
       "channelId": "UCPKWE1H6xhxwPlqUlKgHb_w",
       "published": "2025-09-16T18:10:22+00:00",
-      "views": 1316881,
+      "views": 1316898,
       "category": "pop"
     },
     {
@@ -2951,7 +2951,7 @@
       "channel": "Led Zeppelin",
       "channelId": "UCaKZA66vM_TUpetUNohmR0A",
       "published": "2025-09-15T14:43:39+00:00",
-      "views": 436865,
+      "views": 436866,
       "category": "classics"
     },
     {
@@ -3014,7 +3014,7 @@
       "channel": "Led Zeppelin",
       "channelId": "UCaKZA66vM_TUpetUNohmR0A",
       "published": "2025-09-09T14:00:32+00:00",
-      "views": 392873,
+      "views": 392878,
       "category": "classics"
     },
     {
@@ -3023,7 +3023,7 @@
       "channel": "Olivia Rodrigo",
       "channelId": "UCy3zgWom-5AGypGX_FVTKpg",
       "published": "2025-09-08T16:01:42+00:00",
-      "views": 961434,
+      "views": 961445,
       "category": "pop"
     },
     {
@@ -3032,7 +3032,7 @@
       "channel": "Olivia Rodrigo",
       "channelId": "UCy3zgWom-5AGypGX_FVTKpg",
       "published": "2025-09-08T16:00:15+00:00",
-      "views": 3038188,
+      "views": 3038208,
       "category": "pop"
     },
     {
@@ -3050,7 +3050,7 @@
       "channel": "Led Zeppelin",
       "channelId": "UCaKZA66vM_TUpetUNohmR0A",
       "published": "2025-09-05T14:01:38+00:00",
-      "views": 335931,
+      "views": 335933,
       "category": "classics"
     },
     {
@@ -3059,7 +3059,7 @@
       "channel": "Led Zeppelin",
       "channelId": "UCaKZA66vM_TUpetUNohmR0A",
       "published": "2025-09-05T14:00:08+00:00",
-      "views": 560401,
+      "views": 560410,
       "category": "classics"
     },
     {
@@ -3068,7 +3068,7 @@
       "channel": "Justin Bieber",
       "channelId": "UCIwFjwMjI0y7PDBVEO9-bkQ",
       "published": "2025-09-05T13:42:39+00:00",
-      "views": 2756959,
+      "views": 2756966,
       "category": "pop"
     },
     {
@@ -3077,7 +3077,7 @@
       "channel": "Justin Bieber",
       "channelId": "UCIwFjwMjI0y7PDBVEO9-bkQ",
       "published": "2025-09-05T13:42:39+00:00",
-      "views": 5208069,
+      "views": 5208116,
       "category": "pop"
     },
     {
@@ -3086,7 +3086,7 @@
       "channel": "Justin Bieber",
       "channelId": "UCIwFjwMjI0y7PDBVEO9-bkQ",
       "published": "2025-09-05T13:42:39+00:00",
-      "views": 2840930,
+      "views": 2840932,
       "category": "pop"
     },
     {
@@ -3095,7 +3095,7 @@
       "channel": "Justin Bieber",
       "channelId": "UCIwFjwMjI0y7PDBVEO9-bkQ",
       "published": "2025-09-05T13:42:37+00:00",
-      "views": 4294466,
+      "views": 4294488,
       "category": "pop"
     },
     {
@@ -3104,7 +3104,7 @@
       "channel": "Justin Bieber",
       "channelId": "UCIwFjwMjI0y7PDBVEO9-bkQ",
       "published": "2025-09-05T13:42:37+00:00",
-      "views": 1889108,
+      "views": 1889120,
       "category": "pop"
     },
     {
@@ -3113,7 +3113,7 @@
       "channel": "Justin Bieber",
       "channelId": "UCIwFjwMjI0y7PDBVEO9-bkQ",
       "published": "2025-09-05T13:42:37+00:00",
-      "views": 2496452,
+      "views": 2496458,
       "category": "pop"
     },
     {
@@ -3122,7 +3122,7 @@
       "channel": "Justin Bieber",
       "channelId": "UCIwFjwMjI0y7PDBVEO9-bkQ",
       "published": "2025-09-05T13:42:37+00:00",
-      "views": 1936474,
+      "views": 1936479,
       "category": "pop"
     },
     {
@@ -3131,7 +3131,7 @@
       "channel": "Justin Bieber",
       "channelId": "UCIwFjwMjI0y7PDBVEO9-bkQ",
       "published": "2025-09-05T13:42:37+00:00",
-      "views": 1735624,
+      "views": 1735628,
       "category": "pop"
     },
     {
@@ -3140,7 +3140,7 @@
       "channel": "Justin Bieber",
       "channelId": "UCIwFjwMjI0y7PDBVEO9-bkQ",
       "published": "2025-09-05T13:42:37+00:00",
-      "views": 1410644,
+      "views": 1410647,
       "category": "pop"
     },
     {
@@ -3149,7 +3149,7 @@
       "channel": "Justin Bieber",
       "channelId": "UCIwFjwMjI0y7PDBVEO9-bkQ",
       "published": "2025-09-05T13:42:37+00:00",
-      "views": 2336743,
+      "views": 2336752,
       "category": "pop"
     },
     {
@@ -3158,7 +3158,7 @@
       "channel": "Justin Bieber",
       "channelId": "UCIwFjwMjI0y7PDBVEO9-bkQ",
       "published": "2025-09-05T13:42:37+00:00",
-      "views": 3918378,
+      "views": 3918410,
       "category": "pop"
     },
     {
@@ -3167,7 +3167,7 @@
       "channel": "Justin Bieber",
       "channelId": "UCIwFjwMjI0y7PDBVEO9-bkQ",
       "published": "2025-09-05T13:42:37+00:00",
-      "views": 1992880,
+      "views": 1992881,
       "category": "pop"
     },
     {
@@ -3176,7 +3176,7 @@
       "channel": "Ariana Grande",
       "channelId": "UC9CoOnJkIBMdeijd9qYoT_g",
       "published": "2025-09-04T14:01:40+00:00",
-      "views": 2779438,
+      "views": 2779457,
       "category": "pop"
     },
     {
@@ -3185,7 +3185,7 @@
       "channel": "Ariana Grande",
       "channelId": "UC9CoOnJkIBMdeijd9qYoT_g",
       "published": "2025-09-04T14:01:36+00:00",
-      "views": 1384044,
+      "views": 1384052,
       "category": "pop"
     },
     {
@@ -3194,7 +3194,7 @@
       "channel": "Ariana Grande",
       "channelId": "UC9CoOnJkIBMdeijd9qYoT_g",
       "published": "2025-09-04T14:00:13+00:00",
-      "views": 1851997,
+      "views": 1851998,
       "category": "pop"
     },
     {
@@ -3203,7 +3203,7 @@
       "channel": "The Weeknd",
       "channelId": "UC0WP5P-ufpRfjbNrmOWwLBQ",
       "published": "2025-09-03T20:24:31+00:00",
-      "views": 13102654,
+      "views": 13102715,
       "category": "pop"
     },
     {
@@ -3221,7 +3221,7 @@
       "channel": "Led Zeppelin",
       "channelId": "UCaKZA66vM_TUpetUNohmR0A",
       "published": "2025-09-02T17:21:09+00:00",
-      "views": 1462271,
+      "views": 1462284,
       "category": "classics"
     },
     {
@@ -3248,7 +3248,7 @@
       "channel": "Rihanna",
       "channelId": "UCcgqSM4YEo5vVQpqwN-MaNw",
       "published": "2025-08-29T22:44:48+00:00",
-      "views": 1082230,
+      "views": 1082235,
       "category": "pop"
     },
     {
@@ -3284,7 +3284,7 @@
       "channel": "Bad Bunny",
       "channelId": "UCmBA_wu8xGg1OfOkfW13Q0Q",
       "published": "2025-08-23T18:00:02+00:00",
-      "views": 38443882,
+      "views": 38443926,
       "category": "hits"
     },
     {
@@ -3293,7 +3293,7 @@
       "channel": "Led Zeppelin",
       "channelId": "UCaKZA66vM_TUpetUNohmR0A",
       "published": "2025-08-22T14:01:15+00:00",
-      "views": 519952,
+      "views": 519955,
       "category": "classics"
     },
     {
@@ -3311,7 +3311,7 @@
       "channel": "Led Zeppelin",
       "channelId": "UCaKZA66vM_TUpetUNohmR0A",
       "published": "2025-08-18T15:22:01+00:00",
-      "views": 2496554,
+      "views": 2496573,
       "category": "classics"
     },
     {
@@ -3320,7 +3320,7 @@
       "channel": "Led Zeppelin",
       "channelId": "UCaKZA66vM_TUpetUNohmR0A",
       "published": "2025-08-15T14:30:35+00:00",
-      "views": 534087,
+      "views": 534090,
       "category": "classics"
     },
     {
@@ -3329,7 +3329,7 @@
       "channel": "jbalvinVEVO",
       "channelId": "UCrHL_BF5lHyK43BxLU8-vBQ",
       "published": "2025-08-15T00:00:06+00:00",
-      "views": 12867176,
+      "views": 12867177,
       "category": "hits"
     },
     {
@@ -3347,7 +3347,7 @@
       "channel": "KarolGVEVO",
       "channelId": "UCz9yS18zJGQObwUL_K-ICnw",
       "published": "2025-08-06T20:41:11+00:00",
-      "views": 12881195,
+      "views": 12881200,
       "category": "hits"
     },
     {
@@ -3356,7 +3356,7 @@
       "channel": "jbalvinVEVO",
       "channelId": "UCrHL_BF5lHyK43BxLU8-vBQ",
       "published": "2025-08-05T14:00:07+00:00",
-      "views": 3578148,
+      "views": 3578153,
       "category": "hits"
     },
     {
@@ -3365,7 +3365,7 @@
       "channel": "Beyoncé",
       "channelId": "UCuHzBCaKmtaLcRAOoazhCPA",
       "published": "2025-08-04T12:17:45+00:00",
-      "views": 1726886,
+      "views": 1726887,
       "category": "pop"
     },
     {
@@ -3374,7 +3374,7 @@
       "channel": "Travis Scott",
       "channelId": "UCtxdfwb9wfkoGocVUAJ-Bmg",
       "published": "2025-07-23T20:58:16+00:00",
-      "views": 168765,
+      "views": 168764,
       "category": "rap"
     },
     {
@@ -3401,7 +3401,7 @@
       "channel": "Travis Scott",
       "channelId": "UCtxdfwb9wfkoGocVUAJ-Bmg",
       "published": "2025-07-18T20:34:59+00:00",
-      "views": 6117970,
+      "views": 6118007,
       "category": "rap"
     },
     {
@@ -3410,7 +3410,7 @@
       "channel": "jbalvinVEVO",
       "channelId": "UCrHL_BF5lHyK43BxLU8-vBQ",
       "published": "2025-07-18T00:00:33+00:00",
-      "views": 199266,
+      "views": 199269,
       "category": "hits"
     },
     {
@@ -3428,7 +3428,7 @@
       "channel": "Olivia Rodrigo",
       "channelId": "UCy3zgWom-5AGypGX_FVTKpg",
       "published": "2025-07-17T23:36:49+00:00",
-      "views": 771553,
+      "views": 771559,
       "category": "pop"
     },
     {
@@ -3437,7 +3437,7 @@
       "channel": "Travis Scott",
       "channelId": "UCtxdfwb9wfkoGocVUAJ-Bmg",
       "published": "2025-07-17T20:28:52+00:00",
-      "views": 370399,
+      "views": 370419,
       "category": "rap"
     },
     {
@@ -3446,7 +3446,7 @@
       "channel": "Travis Scott",
       "channelId": "UCtxdfwb9wfkoGocVUAJ-Bmg",
       "published": "2025-07-17T20:28:41+00:00",
-      "views": 2615289,
+      "views": 2615328,
       "category": "rap"
     },
     {
@@ -3464,7 +3464,7 @@
       "channel": "KarolGVEVO",
       "channelId": "UCz9yS18zJGQObwUL_K-ICnw",
       "published": "2025-07-16T22:01:06+00:00",
-      "views": 5931870,
+      "views": 5931886,
       "category": "hits"
     },
     {
@@ -3473,7 +3473,7 @@
       "channel": "Travis Scott",
       "channelId": "UCtxdfwb9wfkoGocVUAJ-Bmg",
       "published": "2025-07-15T18:33:09+00:00",
-      "views": 18230390,
+      "views": 18230551,
       "category": "rap"
     },
     {
@@ -3482,7 +3482,7 @@
       "channel": "Travis Scott",
       "channelId": "UCtxdfwb9wfkoGocVUAJ-Bmg",
       "published": "2025-07-14T16:00:06+00:00",
-      "views": 19370577,
+      "views": 19370729,
       "category": "rap"
     },
     {
@@ -3491,7 +3491,7 @@
       "channel": "Bad Bunny",
       "channelId": "UCmBA_wu8xGg1OfOkfW13Q0Q",
       "published": "2025-07-14T16:00:06+00:00",
-      "views": 17777386,
+      "views": 17777391,
       "category": "hits"
     },
     {
@@ -3500,7 +3500,7 @@
       "channel": "Travis Scott",
       "channelId": "UCtxdfwb9wfkoGocVUAJ-Bmg",
       "published": "2025-07-13T04:59:11+00:00",
-      "views": 4013301,
+      "views": 4013388,
       "category": "rap"
     },
     {
@@ -3509,7 +3509,7 @@
       "channel": "Travis Scott",
       "channelId": "UCtxdfwb9wfkoGocVUAJ-Bmg",
       "published": "2025-07-13T04:58:58+00:00",
-      "views": 3134861,
+      "views": 3134897,
       "category": "rap"
     },
     {
@@ -3518,7 +3518,7 @@
       "channel": "Travis Scott",
       "channelId": "UCtxdfwb9wfkoGocVUAJ-Bmg",
       "published": "2025-07-13T04:58:57+00:00",
-      "views": 7170129,
+      "views": 7170161,
       "category": "rap"
     },
     {
@@ -3536,7 +3536,7 @@
       "channel": "Travis Scott",
       "channelId": "UCtxdfwb9wfkoGocVUAJ-Bmg",
       "published": "2025-07-13T04:58:37+00:00",
-      "views": 825824,
+      "views": 825844,
       "category": "rap"
     },
     {
@@ -3545,7 +3545,7 @@
       "channel": "Bad Bunny",
       "channelId": "UCmBA_wu8xGg1OfOkfW13Q0Q",
       "published": "2025-07-04T16:00:02+00:00",
-      "views": 118854942,
+      "views": 118855286,
       "category": "hits"
     },
     {
@@ -3554,7 +3554,7 @@
       "channel": "KarolGVEVO",
       "channelId": "UCz9yS18zJGQObwUL_K-ICnw",
       "published": "2025-06-20T16:00:02+00:00",
-      "views": 174938134,
+      "views": 174938276,
       "category": "hits"
     },
     {
@@ -3563,7 +3563,7 @@
       "channel": "Ariana Grande",
       "channelId": "UC9CoOnJkIBMdeijd9qYoT_g",
       "published": "2025-06-20T14:00:59+00:00",
-      "views": 562104,
+      "views": 562107,
       "category": "pop"
     },
     {
@@ -3581,7 +3581,7 @@
       "channel": "Ariana Grande",
       "channelId": "UC9CoOnJkIBMdeijd9qYoT_g",
       "published": "2025-06-20T14:00:54+00:00",
-      "views": 3262331,
+      "views": 3262349,
       "category": "pop"
     },
     {
@@ -3590,7 +3590,7 @@
       "channel": "KarolGVEVO",
       "channelId": "UCz9yS18zJGQObwUL_K-ICnw",
       "published": "2025-06-20T04:01:05+00:00",
-      "views": 21163071,
+      "views": 21163100,
       "category": "hits"
     },
     {
@@ -3599,7 +3599,7 @@
       "channel": "KarolGVEVO",
       "channelId": "UCz9yS18zJGQObwUL_K-ICnw",
       "published": "2025-06-20T04:01:05+00:00",
-      "views": 2962130,
+      "views": 2962133,
       "category": "hits"
     },
     {
@@ -3644,7 +3644,7 @@
       "channel": "Ariana Grande",
       "channelId": "UC9CoOnJkIBMdeijd9qYoT_g",
       "published": "2025-05-19T14:01:10+00:00",
-      "views": 17147754,
+      "views": 17147817,
       "category": "pop"
     },
     {
@@ -3680,7 +3680,7 @@
       "channel": "Bad Bunny",
       "channelId": "UCmBA_wu8xGg1OfOkfW13Q0Q",
       "published": "2025-05-16T18:00:02+00:00",
-      "views": 63596935,
+      "views": 63597059,
       "category": "hits"
     },
     {
@@ -3698,7 +3698,7 @@
       "channel": "Rihanna",
       "channelId": "UCcgqSM4YEo5vVQpqwN-MaNw",
       "published": "2025-05-16T04:01:06+00:00",
-      "views": 854138,
+      "views": 854226,
       "category": "pop"
     },
     {
@@ -3707,7 +3707,7 @@
       "channel": "Rihanna",
       "channelId": "UCcgqSM4YEo5vVQpqwN-MaNw",
       "published": "2025-05-16T04:00:06+00:00",
-      "views": 10564823,
+      "views": 10564833,
       "category": "pop"
     },
     {
@@ -3725,7 +3725,7 @@
       "channel": "jbalvinVEVO",
       "channelId": "UCrHL_BF5lHyK43BxLU8-vBQ",
       "published": "2025-05-09T00:00:00+00:00",
-      "views": 2203311,
+      "views": 2203314,
       "category": "hits"
     },
     {
@@ -3752,7 +3752,7 @@
       "channel": "Bad Bunny",
       "channelId": "UCmBA_wu8xGg1OfOkfW13Q0Q",
       "published": "2025-04-25T17:00:02+00:00",
-      "views": 34239453,
+      "views": 34239509,
       "category": "hits"
     },
     {
@@ -3770,7 +3770,7 @@
       "channel": "Beast Philanthropy",
       "channelId": "UCAiLfjNXkNv24uhpzUgPa6A",
       "published": "2025-04-22T10:58:56+00:00",
-      "views": 844595,
+      "views": 844598,
       "category": "general"
     },
     {
@@ -3779,7 +3779,7 @@
       "channel": "Beast Philanthropy",
       "channelId": "UCAiLfjNXkNv24uhpzUgPa6A",
       "published": "2025-04-20T11:01:09+00:00",
-      "views": 15215648,
+      "views": 15215756,
       "category": "general"
     },
     {
@@ -3788,7 +3788,7 @@
       "channel": "The Weeknd",
       "channelId": "UC0WP5P-ufpRfjbNrmOWwLBQ",
       "published": "2025-04-18T14:00:21+00:00",
-      "views": 11421849,
+      "views": 11421851,
       "category": "pop"
     },
     {
@@ -3815,7 +3815,7 @@
       "channel": "Ariana Grande",
       "channelId": "UC9CoOnJkIBMdeijd9qYoT_g",
       "published": "2025-04-08T21:09:44+00:00",
-      "views": 1631818,
+      "views": 1631819,
       "category": "pop"
     },
     {
@@ -3824,7 +3824,7 @@
       "channel": "Beast Philanthropy",
       "channelId": "UCAiLfjNXkNv24uhpzUgPa6A",
       "published": "2025-04-06T11:00:26+00:00",
-      "views": 20118434,
+      "views": 20118499,
       "category": "general"
     },
     {
@@ -3869,7 +3869,7 @@
       "channel": "DrakeVEVO",
       "channelId": "UCQznUf1SjfDqx65hX3zRDiA",
       "published": "2025-03-31T21:54:35+00:00",
-      "views": 53492315,
+      "views": 53492450,
       "category": "rap"
     },
     {
@@ -3878,7 +3878,7 @@
       "channel": "Ariana Grande",
       "channelId": "UC9CoOnJkIBMdeijd9qYoT_g",
       "published": "2025-03-31T17:03:58+00:00",
-      "views": 502563,
+      "views": 502564,
       "category": "pop"
     },
     {
@@ -3887,7 +3887,7 @@
       "channel": "Ariana Grande",
       "channelId": "UC9CoOnJkIBMdeijd9qYoT_g",
       "published": "2025-03-28T23:00:51+00:00",
-      "views": 30952804,
+      "views": 30952888,
       "category": "pop"
     },
     {
@@ -3914,7 +3914,7 @@
       "channel": "BillieEilishVEVO",
       "channelId": "UCDGmojLIoWpXok597xYo8cg",
       "published": "2025-03-19T18:38:03+00:00",
-      "views": 7042911,
+      "views": 7042923,
       "category": "pop"
     },
     {
@@ -3950,7 +3950,7 @@
       "channel": "Beast Philanthropy",
       "channelId": "UCAiLfjNXkNv24uhpzUgPa6A",
       "published": "2025-03-16T12:39:59+00:00",
-      "views": 703531,
+      "views": 703539,
       "category": "general"
     },
     {
@@ -3959,7 +3959,7 @@
       "channel": "Lil Nas X",
       "channelId": "UC_uMv3bNXwapHl8Dzf2p01Q",
       "published": "2025-03-14T19:55:44+00:00",
-      "views": 218283,
+      "views": 218284,
       "category": "rap"
     },
     {
@@ -3968,7 +3968,7 @@
       "channel": "Lil Nas X",
       "channelId": "UC_uMv3bNXwapHl8Dzf2p01Q",
       "published": "2025-03-14T04:00:07+00:00",
-      "views": 5297318,
+      "views": 5297328,
       "category": "rap"
     },
     {
@@ -3977,7 +3977,7 @@
       "channel": "Lil Nas X",
       "channelId": "UC_uMv3bNXwapHl8Dzf2p01Q",
       "published": "2025-03-13T04:00:07+00:00",
-      "views": 811358,
+      "views": 811402,
       "category": "rap"
     },
     {
@@ -3986,7 +3986,7 @@
       "channel": "AC/DC",
       "channelId": "UCB0JSO6d5ysH2Mmqz5I9rIw",
       "published": "2025-03-12T07:00:00+00:00",
-      "views": 1249987,
+      "views": 1249988,
       "category": "classics"
     },
     {
@@ -4031,7 +4031,7 @@
       "channel": "Bad Bunny",
       "channelId": "UCmBA_wu8xGg1OfOkfW13Q0Q",
       "published": "2025-03-10T21:40:25+00:00",
-      "views": 30413906,
+      "views": 30413940,
       "category": "hits"
     },
     {
@@ -4049,7 +4049,7 @@
       "channel": "Beast Philanthropy",
       "channelId": "UCAiLfjNXkNv24uhpzUgPa6A",
       "published": "2025-03-09T12:01:20+00:00",
-      "views": 13679332,
+      "views": 13679394,
       "category": "general"
     },
     {
@@ -4103,7 +4103,7 @@
       "channel": "AC/DC",
       "channelId": "UCB0JSO6d5ysH2Mmqz5I9rIw",
       "published": "2025-02-21T08:00:45+00:00",
-      "views": 762778,
+      "views": 762781,
       "category": "classics"
     },
     {
@@ -4112,7 +4112,7 @@
       "channel": "BillieEilishVEVO",
       "channelId": "UCDGmojLIoWpXok597xYo8cg",
       "published": "2025-02-17T17:00:50+00:00",
-      "views": 7145724,
+      "views": 7145749,
       "category": "pop"
     },
     {
@@ -4121,7 +4121,7 @@
       "channel": "Beast Philanthropy",
       "channelId": "UCAiLfjNXkNv24uhpzUgPa6A",
       "published": "2025-02-16T12:00:23+00:00",
-      "views": 4307985,
+      "views": 4308000,
       "category": "general"
     },
     {
@@ -4130,7 +4130,7 @@
       "channel": "Bad Bunny",
       "channelId": "UCmBA_wu8xGg1OfOkfW13Q0Q",
       "published": "2025-02-14T17:00:02+00:00",
-      "views": 53904301,
+      "views": 53904365,
       "category": "hits"
     },
     {
@@ -4139,7 +4139,7 @@
       "channel": "BillieEilishVEVO",
       "channelId": "UCDGmojLIoWpXok597xYo8cg",
       "published": "2025-02-13T17:00:00+00:00",
-      "views": 1282200,
+      "views": 1282211,
       "category": "pop"
     },
     {
@@ -4166,7 +4166,7 @@
       "channel": "AC/DC",
       "channelId": "UCB0JSO6d5ysH2Mmqz5I9rIw",
       "published": "2025-01-29T08:00:31+00:00",
-      "views": 271899,
+      "views": 271904,
       "category": "classics"
     },
     {
@@ -4175,7 +4175,7 @@
       "channel": "Bad Bunny",
       "channelId": "UCmBA_wu8xGg1OfOkfW13Q0Q",
       "published": "2025-01-28T18:01:33+00:00",
-      "views": 1997325,
+      "views": 1997340,
       "category": "hits"
     },
     {
@@ -4184,7 +4184,7 @@
       "channel": "Beast Philanthropy",
       "channelId": "UCAiLfjNXkNv24uhpzUgPa6A",
       "published": "2025-01-26T12:00:06+00:00",
-      "views": 7320745,
+      "views": 7320759,
       "category": "general"
     },
     {
@@ -4193,7 +4193,7 @@
       "channel": "jbalvinVEVO",
       "channelId": "UCrHL_BF5lHyK43BxLU8-vBQ",
       "published": "2025-01-24T00:00:45+00:00",
-      "views": 68715368,
+      "views": 68715406,
       "category": "hits"
     },
     {
@@ -4202,7 +4202,7 @@
       "channel": "Bad Bunny",
       "channelId": "UCmBA_wu8xGg1OfOkfW13Q0Q",
       "published": "2025-01-15T20:03:55+00:00",
-      "views": 874446,
+      "views": 874447,
       "category": "hits"
     },
     {
@@ -4220,7 +4220,7 @@
       "channel": "Bad Bunny",
       "channelId": "UCmBA_wu8xGg1OfOkfW13Q0Q",
       "published": "2025-01-09T19:37:59+00:00",
-      "views": 430864020,
+      "views": 430864542,
       "category": "hits"
     },
     {
@@ -4238,7 +4238,7 @@
       "channel": "Bad Bunny",
       "channelId": "UCmBA_wu8xGg1OfOkfW13Q0Q",
       "published": "2025-01-05T16:00:19+00:00",
-      "views": 20465035,
+      "views": 20465037,
       "category": "hits"
     },
     {
@@ -4247,7 +4247,7 @@
       "channel": "Bad Bunny",
       "channelId": "UCmBA_wu8xGg1OfOkfW13Q0Q",
       "published": "2025-01-05T16:00:19+00:00",
-      "views": 18097877,
+      "views": 18097886,
       "category": "hits"
     },
     {
@@ -4256,7 +4256,7 @@
       "channel": "Beast Philanthropy",
       "channelId": "UCAiLfjNXkNv24uhpzUgPa6A",
       "published": "2024-12-29T12:00:03+00:00",
-      "views": 8114765,
+      "views": 8114771,
       "category": "general"
     },
     {
@@ -4310,7 +4310,7 @@
       "channel": "Beast Philanthropy",
       "channelId": "UCAiLfjNXkNv24uhpzUgPa6A",
       "published": "2024-12-23T16:38:15+00:00",
-      "views": 465121,
+      "views": 465126,
       "category": "general"
     },
     {
@@ -4328,7 +4328,7 @@
       "channel": "KatyPerryVEVO",
       "channelId": "UC-8Q-hLdECwQmaWNwXitYDw",
       "published": "2024-12-20T05:00:44+00:00",
-      "views": 1660074,
+      "views": 1660075,
       "category": "pop"
     },
     {
@@ -4337,7 +4337,7 @@
       "channel": "KatyPerryVEVO",
       "channelId": "UC-8Q-hLdECwQmaWNwXitYDw",
       "published": "2024-12-20T05:00:42+00:00",
-      "views": 461183,
+      "views": 461185,
       "category": "pop"
     },
     {
@@ -4391,7 +4391,7 @@
       "channel": "BillieEilishVEVO",
       "channelId": "UCDGmojLIoWpXok597xYo8cg",
       "published": "2024-12-19T17:01:00+00:00",
-      "views": 3270966,
+      "views": 3270967,
       "category": "pop"
     },
     {
@@ -4400,7 +4400,7 @@
       "channel": "BillieEilishVEVO",
       "channelId": "UCDGmojLIoWpXok597xYo8cg",
       "published": "2024-12-18T02:40:00+00:00",
-      "views": 4396000,
+      "views": 4396007,
       "category": "pop"
     },
     {
@@ -4409,7 +4409,7 @@
       "channel": "AC/DC",
       "channelId": "UCB0JSO6d5ysH2Mmqz5I9rIw",
       "published": "2024-12-17T08:00:24+00:00",
-      "views": 589345,
+      "views": 589347,
       "category": "classics"
     },
     {
@@ -4418,7 +4418,7 @@
       "channel": "Beast Philanthropy",
       "channelId": "UCAiLfjNXkNv24uhpzUgPa6A",
       "published": "2024-12-15T12:00:47+00:00",
-      "views": 9403784,
+      "views": 9403812,
       "category": "general"
     },
     {
@@ -4436,7 +4436,7 @@
       "channel": "BillieEilishVEVO",
       "channelId": "UCDGmojLIoWpXok597xYo8cg",
       "published": "2024-12-06T16:00:59+00:00",
-      "views": 1562555,
+      "views": 1562558,
       "category": "pop"
     },
     {
@@ -4445,7 +4445,7 @@
       "channel": "BillieEilishVEVO",
       "channelId": "UCDGmojLIoWpXok597xYo8cg",
       "published": "2024-12-06T16:00:45+00:00",
-      "views": 544078,
+      "views": 544079,
       "category": "pop"
     },
     {
@@ -4454,7 +4454,7 @@
       "channel": "BillieEilishVEVO",
       "channelId": "UCDGmojLIoWpXok597xYo8cg",
       "published": "2024-12-06T16:00:39+00:00",
-      "views": 593251,
+      "views": 593253,
       "category": "pop"
     },
     {
@@ -4508,7 +4508,7 @@
       "channel": "Beast Philanthropy",
       "channelId": "UCAiLfjNXkNv24uhpzUgPa6A",
       "published": "2024-12-01T12:00:27+00:00",
-      "views": 23256929,
+      "views": 23257024,
       "category": "general"
     },
     {
@@ -4517,7 +4517,7 @@
       "channel": "BillieEilishVEVO",
       "channelId": "UCDGmojLIoWpXok597xYo8cg",
       "published": "2024-11-29T17:00:35+00:00",
-      "views": 1425280,
+      "views": 1425282,
       "category": "pop"
     },
     {
@@ -4616,7 +4616,7 @@
       "channel": "jbalvinVEVO",
       "channelId": "UCrHL_BF5lHyK43BxLU8-vBQ",
       "published": "2024-10-25T15:00:07+00:00",
-      "views": 1321592,
+      "views": 1321553,
       "category": "hits"
     },
     {
@@ -4670,7 +4670,7 @@
       "channel": "ClaraLucianiVEVO",
       "channelId": "UCiSdpvXF279vae9bVi7ybXw",
       "published": "2024-09-20T10:02:35+00:00",
-      "views": 3361704,
+      "views": 3361677,
       "category": "pop"
     },
     {
@@ -4688,7 +4688,7 @@
       "channel": "KatyPerryVEVO",
       "channelId": "UC-8Q-hLdECwQmaWNwXitYDw",
       "published": "2024-09-20T04:00:36+00:00",
-      "views": 1118655,
+      "views": 1118657,
       "category": "pop"
     },
     {
@@ -4697,7 +4697,7 @@
       "channel": "KatyPerryVEVO",
       "channelId": "UC-8Q-hLdECwQmaWNwXitYDw",
       "published": "2024-09-20T04:00:28+00:00",
-      "views": 705246,
+      "views": 705247,
       "category": "pop"
     },
     {
@@ -4706,7 +4706,7 @@
       "channel": "KatyPerryVEVO",
       "channelId": "UC-8Q-hLdECwQmaWNwXitYDw",
       "published": "2024-09-20T04:00:23+00:00",
-      "views": 1133567,
+      "views": 1133568,
       "category": "pop"
     },
     {
@@ -4733,7 +4733,7 @@
       "channel": "KatyPerryVEVO",
       "channelId": "UC-8Q-hLdECwQmaWNwXitYDw",
       "published": "2024-09-20T04:00:20+00:00",
-      "views": 1430383,
+      "views": 1430384,
       "category": "pop"
     },
     {
@@ -4742,7 +4742,7 @@
       "channel": "KatyPerryVEVO",
       "channelId": "UC-8Q-hLdECwQmaWNwXitYDw",
       "published": "2024-09-20T04:00:12+00:00",
-      "views": 1101924,
+      "views": 1101925,
       "category": "pop"
     },
     {
@@ -4814,7 +4814,7 @@
       "channel": "Rihanna",
       "channelId": "UCcgqSM4YEo5vVQpqwN-MaNw",
       "published": "2024-06-13T15:18:33+00:00",
-      "views": 603621,
+      "views": 603636,
       "category": "pop"
     },
     {
@@ -4832,7 +4832,7 @@
       "channel": "Rihanna",
       "channelId": "UCcgqSM4YEo5vVQpqwN-MaNw",
       "published": "2024-06-11T03:25:39+00:00",
-      "views": 453046,
+      "views": 453050,
       "category": "pop"
     },
     {
@@ -4976,7 +4976,7 @@
       "channel": "DrakeVEVO",
       "channelId": "UCQznUf1SjfDqx65hX3zRDiA",
       "published": "2024-02-14T23:00:27+00:00",
-      "views": 35524546,
+      "views": 35524563,
       "category": "rap"
     },
     {
@@ -4985,7 +4985,7 @@
       "channel": "Rihanna",
       "channelId": "UCcgqSM4YEo5vVQpqwN-MaNw",
       "published": "2024-01-12T16:18:59+00:00",
-      "views": 1922619,
+      "views": 1922638,
       "category": "pop"
     },
     {
@@ -4994,7 +4994,7 @@
       "channel": "DrakeVEVO",
       "channelId": "UCQznUf1SjfDqx65hX3zRDiA",
       "published": "2023-12-20T16:49:22+00:00",
-      "views": 18890960,
+      "views": 18890974,
       "category": "rap"
     },
     {
@@ -5012,7 +5012,7 @@
       "channel": "DrakeVEVO",
       "channelId": "UCQznUf1SjfDqx65hX3zRDiA",
       "published": "2023-11-29T17:00:10+00:00",
-      "views": 10309717,
+      "views": 10309733,
       "category": "rap"
     },
     {
@@ -5021,7 +5021,7 @@
       "channel": "DrakeVEVO",
       "channelId": "UCQznUf1SjfDqx65hX3zRDiA",
       "published": "2023-11-17T05:00:36+00:00",
-      "views": 4655240,
+      "views": 4655247,
       "category": "rap"
     },
     {
@@ -5048,7 +5048,7 @@
       "channel": "DrakeVEVO",
       "channelId": "UCQznUf1SjfDqx65hX3zRDiA",
       "published": "2023-11-17T05:00:14+00:00",
-      "views": 4323433,
+      "views": 4323438,
       "category": "rap"
     },
     {
@@ -5066,7 +5066,7 @@
       "channel": "DrakeVEVO",
       "channelId": "UCQznUf1SjfDqx65hX3zRDiA",
       "published": "2023-11-17T05:00:00+00:00",
-      "views": 15506788,
+      "views": 15506799,
       "category": "rap"
     },
     {
@@ -5075,7 +5075,7 @@
       "channel": "DrakeVEVO",
       "channelId": "UCQznUf1SjfDqx65hX3zRDiA",
       "published": "2023-11-15T20:26:07+00:00",
-      "views": 85664646,
+      "views": 85664728,
       "category": "rap"
     },
     {
@@ -5084,7 +5084,7 @@
       "channel": "Nirvana",
       "channelId": "UCFMZHIQMgBXTSxsr86Caazw",
       "published": "2023-10-27T19:05:48+00:00",
-      "views": 4298169,
+      "views": 4298184,
       "category": "classics"
     },
     {
@@ -5102,7 +5102,7 @@
       "channel": "Nirvana",
       "channelId": "UCFMZHIQMgBXTSxsr86Caazw",
       "published": "2023-10-27T19:00:34+00:00",
-      "views": 1339760,
+      "views": 1339762,
       "category": "classics"
     },
     {
@@ -5111,7 +5111,7 @@
       "channel": "Nirvana",
       "channelId": "UCFMZHIQMgBXTSxsr86Caazw",
       "published": "2023-10-27T19:00:33+00:00",
-      "views": 1727355,
+      "views": 1727361,
       "category": "classics"
     },
     {
@@ -5120,7 +5120,7 @@
       "channel": "Nirvana",
       "channelId": "UCFMZHIQMgBXTSxsr86Caazw",
       "published": "2023-10-27T19:00:23+00:00",
-      "views": 4279094,
+      "views": 4279101,
       "category": "classics"
     },
     {
@@ -5156,7 +5156,7 @@
       "channel": "Nirvana",
       "channelId": "UCFMZHIQMgBXTSxsr86Caazw",
       "published": "2023-10-27T19:00:04+00:00",
-      "views": 1156786,
+      "views": 1156788,
       "category": "classics"
     },
     {
@@ -5165,7 +5165,7 @@
       "channel": "Nirvana",
       "channelId": "UCFMZHIQMgBXTSxsr86Caazw",
       "published": "2023-10-27T19:00:02+00:00",
-      "views": 629908,
+      "views": 629909,
       "category": "classics"
     },
     {
@@ -5201,7 +5201,7 @@
       "channel": "DrakeVEVO",
       "channelId": "UCQznUf1SjfDqx65hX3zRDiA",
       "published": "2023-10-20T19:28:19+00:00",
-      "views": 7911163,
+      "views": 7911171,
       "category": "rap"
     },
     {
@@ -5210,7 +5210,7 @@
       "channel": "Nirvana",
       "channelId": "UCFMZHIQMgBXTSxsr86Caazw",
       "published": "2023-10-13T16:00:06+00:00",
-      "views": 13956933,
+      "views": 13956947,
       "category": "classics"
     },
     {
@@ -5228,7 +5228,7 @@
       "channel": "DrakeVEVO",
       "channelId": "UCQznUf1SjfDqx65hX3zRDiA",
       "published": "2023-10-06T18:00:34+00:00",
-      "views": 8039828,
+      "views": 8039838,
       "category": "rap"
     },
     {
@@ -5237,7 +5237,7 @@
       "channel": "DrakeVEVO",
       "channelId": "UCQznUf1SjfDqx65hX3zRDiA",
       "published": "2023-10-06T18:00:32+00:00",
-      "views": 7168776,
+      "views": 7168791,
       "category": "rap"
     },
     {
@@ -5246,7 +5246,7 @@
       "channel": "DrakeVEVO",
       "channelId": "UCQznUf1SjfDqx65hX3zRDiA",
       "published": "2023-10-06T18:00:32+00:00",
-      "views": 8009696,
+      "views": 8009712,
       "category": "rap"
     },
     {
@@ -5273,7 +5273,7 @@
       "channel": "Rihanna",
       "channelId": "UCcgqSM4YEo5vVQpqwN-MaNw",
       "published": "2023-07-14T22:54:12+00:00",
-      "views": 2264949,
+      "views": 2264957,
       "category": "pop"
     },
     {
@@ -5300,7 +5300,7 @@
       "channel": "Rihanna",
       "channelId": "UCcgqSM4YEo5vVQpqwN-MaNw",
       "published": "2023-01-13T08:26:19+00:00",
-      "views": 1181463,
+      "views": 1181530,
       "category": "pop"
     },
     {
@@ -5354,7 +5354,7 @@
       "channel": "AdeleVEVO",
       "channelId": "UComP_epzeKzvBX156r6pm1Q",
       "published": "2022-10-26T16:00:06+00:00",
-      "views": 77983094,
+      "views": 77983151,
       "category": "pop"
     },
     {
@@ -5372,7 +5372,7 @@
       "channel": "AdeleVEVO",
       "channelId": "UComP_epzeKzvBX156r6pm1Q",
       "published": "2022-02-09T16:58:28+00:00",
-      "views": 52302483,
+      "views": 52302514,
       "category": "pop"
     },
     {
@@ -5381,7 +5381,7 @@
       "channel": "AdeleVEVO",
       "channelId": "UComP_epzeKzvBX156r6pm1Q",
       "published": "2022-01-12T17:00:16+00:00",
-      "views": 127835536,
+      "views": 127835563,
       "category": "pop"
     },
     {
@@ -5390,7 +5390,7 @@
       "channel": "AdeleVEVO",
       "channelId": "UComP_epzeKzvBX156r6pm1Q",
       "published": "2021-11-23T15:00:17+00:00",
-      "views": 207159147,
+      "views": 207159228,
       "category": "pop"
     },
     {
@@ -5399,7 +5399,367 @@
       "channel": "AdeleVEVO",
       "channelId": "UComP_epzeKzvBX156r6pm1Q",
       "published": "2021-11-19T05:00:34+00:00",
-      "views": 6371320,
+      "views": 6371321,
+      "category": "pop"
+    },
+    {
+      "id": "zIF70l1zUKU",
+      "title": "Adele - My Little Love (Official Lyric Video)",
+      "channel": "AdeleVEVO",
+      "channelId": "UComP_epzeKzvBX156r6pm1Q",
+      "published": "2021-11-19T05:00:32+00:00",
+      "views": 21673062,
+      "category": "pop"
+    },
+    {
+      "id": "_dlExeOyFh4",
+      "title": "Adele - To Be Loved (Official Lyric Video)",
+      "channel": "AdeleVEVO",
+      "channelId": "UComP_epzeKzvBX156r6pm1Q",
+      "published": "2021-11-19T05:00:25+00:00",
+      "views": 35439783,
+      "category": "pop"
+    },
+    {
+      "id": "w6VpznmUoaM",
+      "title": "Adele - Can I Get It (Official Lyric Video)",
+      "channel": "AdeleVEVO",
+      "channelId": "UComP_epzeKzvBX156r6pm1Q",
+      "published": "2021-11-19T05:00:23+00:00",
+      "views": 10668917,
+      "category": "pop"
+    },
+    {
+      "id": "X-yIEMduRXk",
+      "title": "Adele - Easy On Me (Official Lyric Video)",
+      "channel": "AdeleVEVO",
+      "channelId": "UComP_epzeKzvBX156r6pm1Q",
+      "published": "2021-11-19T05:00:21+00:00",
+      "views": 489250809,
+      "category": "pop"
+    },
+    {
+      "id": "yoHS2T32Z5o",
+      "title": "Adele - Hold On (Official Lyric Video)",
+      "channel": "AdeleVEVO",
+      "channelId": "UComP_epzeKzvBX156r6pm1Q",
+      "published": "2021-11-19T05:00:20+00:00",
+      "views": 16001562,
+      "category": "pop"
+    },
+    {
+      "id": "oPmMUZbnc3o",
+      "title": "Adele - Love Is A Game (Official Lyric Video)",
+      "channel": "AdeleVEVO",
+      "channelId": "UComP_epzeKzvBX156r6pm1Q",
+      "published": "2021-11-19T05:00:16+00:00",
+      "views": 13935096,
+      "category": "pop"
+    },
+    {
+      "id": "jptpkiCVfAs",
+      "title": "Adele - Woman Like Me (Official Lyric Video)",
+      "channel": "AdeleVEVO",
+      "channelId": "UComP_epzeKzvBX156r6pm1Q",
+      "published": "2021-11-19T05:00:14+00:00",
+      "views": 9359214,
+      "category": "pop"
+    },
+    {
+      "id": "EFIfRhk8NRc",
+      "title": "Adele - Strangers By Nature (Official Lyric Video)",
+      "channel": "AdeleVEVO",
+      "channelId": "UComP_epzeKzvBX156r6pm1Q",
+      "published": "2021-11-19T05:00:09+00:00",
+      "views": 9327775,
+      "category": "pop"
+    },
+    {
+      "id": "PfwIpoVMvNs",
+      "title": "Adele - Oh My God (Official Lyric Video)",
+      "channel": "AdeleVEVO",
+      "channelId": "UComP_epzeKzvBX156r6pm1Q",
+      "published": "2021-11-19T05:00:07+00:00",
+      "views": 33256257,
+      "category": "pop"
+    },
+    {
+      "id": "axUh_2fTLe4",
+      "title": "Adele - I Drink Wine (Official Lyric Video)",
+      "channel": "AdeleVEVO",
+      "channelId": "UComP_epzeKzvBX156r6pm1Q",
+      "published": "2021-11-19T05:00:02+00:00",
+      "views": 38924191,
+      "category": "pop"
+    },
+    {
+      "id": "mU63HJ3NYTM",
+      "title": "Clara Luciani - Ma soeur (Clip officiel)",
+      "channel": "ClaraLucianiVEVO",
+      "channelId": "UCiSdpvXF279vae9bVi7ybXw",
+      "published": "2019-11-22T16:00:11+00:00",
+      "views": 13115283,
+      "category": "pop"
+    },
+    {
+      "id": "DFNr8NCfV78",
+      "title": "Clara Luciani et Vladimir Cauchemar - La chanson de Delphine (Clip officiel)",
+      "channel": "ClaraLucianiVEVO",
+      "channelId": "UCiSdpvXF279vae9bVi7ybXw",
+      "published": "2019-11-12T16:00:00+00:00",
+      "views": 2167918,
+      "category": "pop"
+    },
+    {
+      "id": "CpCHDaLCXdQ",
+      "title": "Clara Luciani - Ma soeur",
+      "channel": "ClaraLucianiVEVO",
+      "channelId": "UCiSdpvXF279vae9bVi7ybXw",
+      "published": "2019-10-18T08:00:05+00:00",
+      "views": 1479782,
+      "category": "pop"
+    },
+    {
+      "id": "bFoV7ZhhYmE",
+      "title": "Clara Luciani - Dors (Souvenirs de tournée)",
+      "channel": "ClaraLucianiVEVO",
+      "channelId": "UCiSdpvXF279vae9bVi7ybXw",
+      "published": "2019-10-10T15:00:05+00:00",
+      "views": 918885,
+      "category": "pop"
+    },
+    {
+      "id": "dOnN4_BT9FE",
+      "title": "Clara Luciani - Nue - Live Performance | Vevo",
+      "channel": "ClaraLucianiVEVO",
+      "channelId": "UCiSdpvXF279vae9bVi7ybXw",
+      "published": "2019-05-15T10:00:37+00:00",
+      "views": 243120,
+      "category": "pop"
+    },
+    {
+      "id": "wJG3NZr7c8I",
+      "title": "Clara Luciani - Bovary - Live Performance | Vevo",
+      "channel": "ClaraLucianiVEVO",
+      "channelId": "UCiSdpvXF279vae9bVi7ybXw",
+      "published": "2019-05-15T10:00:09+00:00",
+      "views": 137678,
+      "category": "pop"
+    },
+    {
+      "id": "zEh4_vdvbps",
+      "title": "Clara Luciani - Nue (Clip officiel)",
+      "channel": "ClaraLucianiVEVO",
+      "channelId": "UCiSdpvXF279vae9bVi7ybXw",
+      "published": "2019-04-04T15:00:12+00:00",
+      "views": 17251958,
+      "category": "pop"
+    },
+    {
+      "id": "wQZd-qLAdWg",
+      "title": "Clara Luciani - On ne meurt pas d'amour (Souvenir du Japon)",
+      "channel": "ClaraLucianiVEVO",
+      "channelId": "UCiSdpvXF279vae9bVi7ybXw",
+      "published": "2019-03-12T09:00:14+00:00",
+      "views": 3699976,
+      "category": "pop"
+    },
+    {
+      "id": "YYbcfBtFVQ0",
+      "title": "Clara Luciani - Eddy (Live)",
+      "channel": "ClaraLucianiVEVO",
+      "channelId": "UCiSdpvXF279vae9bVi7ybXw",
+      "published": "2018-05-30T07:00:05+00:00",
+      "views": 937147,
+      "category": "pop"
+    },
+    {
+      "id": "OqcrSqg9SBU",
+      "title": "Clara Luciani - Drôle d'époque (live)",
+      "channel": "ClaraLucianiVEVO",
+      "channelId": "UCiSdpvXF279vae9bVi7ybXw",
+      "published": "2018-04-06T07:00:04+00:00",
+      "views": 2045319,
+      "category": "pop"
+    },
+    {
+      "id": "E9XLDx4-GRg",
+      "title": "Clara Luciani - La baie",
+      "channel": "ClaraLucianiVEVO",
+      "channelId": "UCiSdpvXF279vae9bVi7ybXw",
+      "published": "2018-03-27T08:00:01+00:00",
+      "views": 3538271,
+      "category": "pop"
+    },
+    {
+      "id": "SgO9V3FGQa4",
+      "title": "Clara Luciani - Les fleurs (live)",
+      "channel": "ClaraLucianiVEVO",
+      "channelId": "UCiSdpvXF279vae9bVi7ybXw",
+      "published": "2018-02-23T08:00:03+00:00",
+      "views": 1998917,
+      "category": "pop"
+    },
+    {
+      "id": "9H1ebANbUBQ",
+      "title": "CasseursFlowtersVEVO Live Stream",
+      "channel": "CasseursFlowtersVEVO",
+      "channelId": "UCywOGWRNk-2OPRLc8weD6lA",
+      "published": "2017-10-14T08:29:26+00:00",
+      "views": 0,
+      "category": "rap"
+    },
+    {
+      "id": "zRNsxCqNRhQ",
+      "title": "Casseurs Flowters - Bloqués [Live 2016]",
+      "channel": "CasseursFlowtersVEVO",
+      "channelId": "UCywOGWRNk-2OPRLc8weD6lA",
+      "published": "2016-12-07T10:55:48+00:00",
+      "views": 304295,
+      "category": "rap"
+    },
+    {
+      "id": "-Tka1q7YzHc",
+      "title": "Casseurs Flowters - Manger c'est tricher [Live 2016]",
+      "channel": "CasseursFlowtersVEVO",
+      "channelId": "UCywOGWRNk-2OPRLc8weD6lA",
+      "published": "2016-12-07T10:55:42+00:00",
+      "views": 121212,
+      "category": "rap"
+    },
+    {
+      "id": "YGeE-ds-c0c",
+      "title": "Casseurs Flowters - Xavier [Live 2016]",
+      "channel": "CasseursFlowtersVEVO",
+      "channelId": "UCywOGWRNk-2OPRLc8weD6lA",
+      "published": "2016-12-07T10:55:37+00:00",
+      "views": 105989,
+      "category": "rap"
+    },
+    {
+      "id": "Pit8AcEpQTs",
+      "title": "Casseurs Flowters - J'essaye, j'essaye [Live 2016]",
+      "channel": "CasseursFlowtersVEVO",
+      "channelId": "UCywOGWRNk-2OPRLc8weD6lA",
+      "published": "2016-12-07T10:55:32+00:00",
+      "views": 120551,
+      "category": "rap"
+    },
+    {
+      "id": "_q1J1AQrw6Y",
+      "title": "Casseurs Flowters - Ils sont cools [Live 2016]",
+      "channel": "CasseursFlowtersVEVO",
+      "channelId": "UCywOGWRNk-2OPRLc8weD6lA",
+      "published": "2016-12-07T10:55:31+00:00",
+      "views": 92219,
+      "category": "rap"
+    },
+    {
+      "id": "Vf_zOOdJABc",
+      "title": "Casseurs Flowters - Inachevés [Live 2016]",
+      "channel": "CasseursFlowtersVEVO",
+      "channelId": "UCywOGWRNk-2OPRLc8weD6lA",
+      "published": "2016-12-07T10:55:27+00:00",
+      "views": 116339,
+      "category": "rap"
+    },
+    {
+      "id": "mv4BpheX3go",
+      "title": "Casseurs Flowters - Dans la place pour être [Live 2016]",
+      "channel": "CasseursFlowtersVEVO",
+      "channelId": "UCywOGWRNk-2OPRLc8weD6lA",
+      "published": "2016-12-07T10:55:25+00:00",
+      "views": 95153,
+      "category": "rap"
+    },
+    {
+      "id": "2WRW-4QuPPU",
+      "title": "Casseurs Flowters - À l’heure où je me couche [Live 2016]",
+      "channel": "CasseursFlowtersVEVO",
+      "channelId": "UCywOGWRNk-2OPRLc8weD6lA",
+      "published": "2016-12-07T10:55:24+00:00",
+      "views": 71800,
+      "category": "rap"
+    },
+    {
+      "id": "Xp4Plo2Xfz8",
+      "title": "Casseurs Flowters - Stupide ¡ Stupide ¡ Stupide ¡ [Live 2016]",
+      "channel": "CasseursFlowtersVEVO",
+      "channelId": "UCywOGWRNk-2OPRLc8weD6lA",
+      "published": "2016-12-07T10:55:23+00:00",
+      "views": 130518,
+      "category": "rap"
+    },
+    {
+      "id": "P-uE10EIdTs",
+      "title": "Casseurs Flowters - Regarde comme il fait beau dehors [Live 2016]",
+      "channel": "CasseursFlowtersVEVO",
+      "channelId": "UCywOGWRNk-2OPRLc8weD6lA",
+      "published": "2016-12-07T10:55:21+00:00",
+      "views": 142444,
+      "category": "rap"
+    },
+    {
+      "id": "6w2aYIyFzHc",
+      "title": "Casseurs Flowters - Le mal est fait [Live 2016]",
+      "channel": "CasseursFlowtersVEVO",
+      "channelId": "UCywOGWRNk-2OPRLc8weD6lA",
+      "published": "2016-12-07T10:55:17+00:00",
+      "views": 30507,
+      "category": "rap"
+    },
+    {
+      "id": "qqgzwVckMpQ",
+      "title": "Casseurs Flowters - Des histoires à raconter [Live 2016]",
+      "channel": "CasseursFlowtersVEVO",
+      "channelId": "UCywOGWRNk-2OPRLc8weD6lA",
+      "published": "2016-12-07T10:55:17+00:00",
+      "views": 83333,
+      "category": "rap"
+    },
+    {
+      "id": "_zbjD3fHNQM",
+      "title": "Casseurs Flowters - La mort du disque [Live 2016]",
+      "channel": "CasseursFlowtersVEVO",
+      "channelId": "UCywOGWRNk-2OPRLc8weD6lA",
+      "published": "2016-12-07T10:55:10+00:00",
+      "views": 72469,
+      "category": "rap"
+    },
+    {
+      "id": "k7vUNZv631w",
+      "title": "Casseurs Flowters - Si Facile [Live 2016]",
+      "channel": "CasseursFlowtersVEVO",
+      "channelId": "UCywOGWRNk-2OPRLc8weD6lA",
+      "published": "2016-12-07T10:54:25+00:00",
+      "views": 126498,
+      "category": "rap"
+    },
+    {
+      "id": "YI90HhnZt2c",
+      "title": "Амстердам велосипеды",
+      "channel": "Vata Gorit",
+      "channelId": "UCp_AYo8Li83voX3afcEI2eA",
+      "published": "2016-11-06T19:22:18+00:00",
+      "views": 42,
+      "category": "pop"
+    },
+    {
+      "id": "uykjg27a0D0",
+      "title": "Derka - \"Quelle Aventure\"",
+      "channel": "NiskaOfficiel",
+      "channelId": "UCeunSub1ksid0meYPnSsV_w",
+      "published": "2009-01-30T21:25:02+00:00",
+      "views": 18986,
+      "category": "rap"
+    },
+    {
+      "id": "YX9JkuhnMTE",
+      "title": "Auction For Tomsshoes.com - Show Your Support!",
+      "channel": "siamusic",
+      "channelId": "UC-DrP2TYRYXTuTSek5-AskQ",
+      "published": "2007-08-29T13:41:34+00:00",
+      "views": 351,
       "category": "pop"
     }
   ]
