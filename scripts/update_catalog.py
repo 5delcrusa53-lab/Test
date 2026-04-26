@@ -157,7 +157,7 @@ def main():
             added += 1
         print(f'  + {added} new videos')
     all_videos.sort(key=lambda v: v.get('published') or '', reverse=True)
-    MAX_VIDEOS = 600
+    MAX_VIDEOS = 2500
     if len(all_videos) > MAX_VIDEOS:
         all_videos = all_videos[:MAX_VIDEOS]
     output = {
