@@ -1,35 +1,92 @@
 ; ============================================================
-; AETHER - Liste des chaînes YouTube à suivre
-; ============================================================
-; Une chaîne par ligne. Format au choix :
-;   @MonChannel              # category
-;   UCxxxxxxxxxxxxxxxxxxxx   # category
-;   https://www.youtube.com/@MonChannel    # category
-;
-; Catégories : pop, rap, chill, hits, classics, gaming, tech, humour, news
+; AETHER - Liste élargie (~75 chaînes, ~1000+ vidéos après run)
 ; ============================================================
 
-; --- Musique internationale ---
-@LofiGirl                # chill
+; --- Pop / Hits internationaux ---
 @DuaLipa                 # pop
 @BillieEilish            # pop
 @TheWeeknd               # pop
 @taylorswift             # pop
 @EdSheeran               # pop
+@arianagrande            # pop
+@justinbieber            # pop
+@SelenaGomez             # pop
+@katyperry               # pop
+@SiaMusic                # pop
+@adele                   # pop
+@brunomars               # pop
+@harrystyles             # pop
+@oliviarodrigo           # pop
+@SabrinaCarpenter        # pop
+@Beyonce                 # pop
+@rihanna                 # pop
+@charliputh              # pop
+@shawnmendes             # pop
+@SamSmithWorld           # pop
 
-; --- Rap FR ---
+; --- Rap US ---
+@drakeofficial           # rap
+@KendrickLamarVEVO       # rap
+@TravisScottXX           # rap
+@PostMaloneVEVO          # rap
+@kanyewest               # rap
+@eminemmusic             # rap
+@LilNasX                 # rap
+@DojaCat                 # rap
+@cardib                  # rap
+
+; --- Rap / Pop FR ---
 @JulOfficiel             # rap
 @SchOfficial             # rap
 @booska_p                # rap
 @Tiakola                 # rap
-
-; --- Pop FR ---
+@damso                   # rap
+@orelsan                 # rap
+@PNLMusic                # rap
+@NinhoOff                # rap
+@Niskaofficiel           # rap
+@SoolkingOfficial        # rap
+@gazoofficiel            # rap
+@WernerOfficiel          # rap
+@Jazzy_Bazz              # rap
 @AngeleVEVO              # pop
 @ClaraLucianiVEVO        # pop
+@VianneyOfficiel         # pop
+@OrelsanOfficiel         # rap
 
-; --- Mainstream ---
-@MrBeast                 # general
+; --- Chill / Lofi ---
+@LofiGirl                # chill
+@ChilledCow              # chill
+@ChillhopMusic           # chill
+@TheJazzHopCafe          # chill
+@DreamyChill             # chill
 
-; --- Classiques ---
+; --- Classiques rock / variété ---
 @QueenOfficial           # classics
 @RollingStones           # classics
+@ledzeppelin             # classics
+@thebeatles              # classics
+@PinkFloyd               # classics
+@guns_n_roses            # classics
+@nirvana                 # classics
+@acdc                    # classics
+
+; --- Electro / Dance ---
+@martingarrix            # hits
+@DavidGuetta             # hits
+@CalvinHarrisVEVO        # hits
+@TheChainsmokers         # hits
+
+; --- Latino / Reggaeton ---
+@LuisFonsi               # hits
+@JBalvin                 # hits
+@badbunnypr              # hits
+@karolg                  # hits
+@MalumaVEVO              # hits
+
+; --- Mainstream / Variétés ---
+@MrBeast                 # general
+
+; --- Labels (gros catalogues, lots de clips récents) ---
+@VEVO                    # hits
+@TraxsourceOfficial      # hits
