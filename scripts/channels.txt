@@ -1,0 +1,35 @@
+; ============================================================
+; AETHER - Liste des chaînes YouTube à suivre
+; ============================================================
+; Une chaîne par ligne. Format au choix :
+;   @MonChannel              # category
+;   UCxxxxxxxxxxxxxxxxxxxx   # category
+;   https://www.youtube.com/@MonChannel    # category
+;
+; Catégories : pop, rap, chill, hits, classics, gaming, tech, humour, news
+; ============================================================
+
+; --- Musique internationale ---
+@LofiGirl                # chill
+@DuaLipa                 # pop
+@BillieEilish            # pop
+@TheWeeknd               # pop
+@taylorswift             # pop
+@EdSheeran               # pop
+
+; --- Rap FR ---
+@JulOfficiel             # rap
+@SchOfficial             # rap
+@booska_p                # rap
+@Tiakola                 # rap
+
+; --- Pop FR ---
+@AngeleVEVO              # pop
+@ClaraLucianiVEVO        # pop
+
+; --- Mainstream ---
+@MrBeast                 # general
+
+; --- Classiques ---
+@QueenOfficial           # classics
+@RollingStones           # classics
